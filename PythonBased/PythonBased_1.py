@@ -55,6 +55,7 @@ print(testyuple_2)
 
 #if else
 age = 16
+#age = input('age = ')
 if age >= 18:
     print('adult')
 elif age >= 6: #elif = else if in C
@@ -62,10 +63,32 @@ elif age >= 6: #elif = else if in C
 else:
     print('kids')
 
+#for in
+forsum = 0
+for forx in [1,3,5,7,9] :
+    forsum = forsum + forx*forx
+print('forsum = ',forsum)
 
+#while
+whilesum = 0
+whilen = 0
+while whilen < 100 :
+    #if whilen > 50 : break 这里插结果会不一样
+    whilen = whilen + 2
+    if whilen > 50 : 
+        break #跳出循环
+    if whilen % 4 == 0  : 
+        continue#不执行下面语句,继续下一轮循环
+    whilesum  = whilesum + whilen
+print('whilesum = ',whilesum)
 
-
-
+#dict key-value ！key不可变，不可以用list当key
+dicttest = {'A':65,'B':66,'C':67}   #定义大括号
+dicttest['A'] = 1                   #调用中括号
+print(dicttest)
+#print(dicttest['D'])直接写会报错
+print(dicttest.get('B','wrong'))    #函数小括号
+print(dicttest.get('D','wrong'))
 
 
 
