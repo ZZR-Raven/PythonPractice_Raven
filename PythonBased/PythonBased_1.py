@@ -90,6 +90,14 @@ print(dicttest)
 print(dicttest.get('B','wrong'))    #函数小括号
 print(dicttest.get('D','wrong'))
 
+#字符串可变
+strtest = 'harry'
+strtest_1 = strtest.replace('h','H')
+print(strtest_1)
+print(strtest)
+strtest.replace('y','1')
+print(strtest)#结果还是harry，是创建了一个新字符串然后返回，所以需要一个变量去接收
+
 
 
 
