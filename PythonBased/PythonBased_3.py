@@ -88,6 +88,8 @@ def fib_generator(max):
         a, b = b, a + b
         n = n +1
     return 'done'
+for n in fib_generator(10):
+    print(n)
 #next yield
 def odd():
     print('step 1')
@@ -104,4 +106,11 @@ next(o)
 next(o)
 next(o)
 #next(o)    会溢出
+
+#迭代器 Iterator
+print(isinstance('asdfg',Iterable))
+print(isinstance(1234,Iterable))
+
+
+
 
