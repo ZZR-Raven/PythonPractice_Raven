@@ -2,11 +2,13 @@ import re
 import csv
 
 with open('tieba_long5.txt','r',encoding='utf-8') as f:
-    source = f.read()    
+    source_temp = f.read()
+    source = source_temp.decode()    
 
 result_list = [] 
 username_list = re.findall('username=".*?"',source,re.S)
 content_list = re.findall('j_d_post_content ">(.*?)<"',source,re.S)
+#正则表达式解决不了
 
 print(username_list)
 print(content_list)
