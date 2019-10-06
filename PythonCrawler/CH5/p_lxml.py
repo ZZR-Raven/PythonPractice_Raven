@@ -23,6 +23,7 @@ html1 = '''
 '''
 
 selector_1 = lxml.html.fromstring(html1) 
+print(type(selector_1))
 content_1 = selector_1.xpath('//div[@id="test"]/text()')
 #for each in content_1:
 #    print(each)
@@ -31,10 +32,26 @@ content_1 = selector_1.xpath('//div[@id="test"]/text()')
 #
 #            龙头在胸口
 
+
 #先抓大再抓小
 data = selector_1.xpath('//div[@id="test"]')[0]
 info = data.xpath('string(.)')
-print(info)
+print(type(data))
+print(type(info))
+#print(info)
+#        我左青龙
+#
+#                右白虎
+#                上朱雀
+#                    下玄武
+#
+#                老牛在当中
+#
+#            龙头在胸口
+
+
+
+
 
 
 
