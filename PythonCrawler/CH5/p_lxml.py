@@ -13,7 +13,7 @@ html1 = '''
                 右白虎
                 <ul>上朱雀
                     <li>下玄武</li>
-                </ul>>
+                </ul>
                 老牛在当中
             </span>
             龙头在胸口
@@ -24,14 +24,17 @@ html1 = '''
 
 selector_1 = lxml.html.fromstring(html1) 
 content_1 = selector_1.xpath('//div[@id="test"]/text()')
-for each in content_1:
-    print(each)
+#for each in content_1:
+#    print(each)
 #        我左青龙
 #
 #
 #            龙头在胸口
 
-
+#先抓大再抓小
+data = selector_1.xpath('//div[@id="test"]')[0]
+info = data.xpath('string(.)')
+print(info)
 
 
 
