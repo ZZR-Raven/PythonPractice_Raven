@@ -36,7 +36,7 @@ def save(chapter,article):
 #num = 65
 #for url in real_url:
 #for num in range(65,)
-num = 65
+num = 0
 while (num <= len(real_url)):
     print("request start")
     code_html = requests.get(real_url[num])
