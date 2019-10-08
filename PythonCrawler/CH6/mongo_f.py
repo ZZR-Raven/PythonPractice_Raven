@@ -40,4 +40,5 @@ collection.update_many({'age':20},{'$set':{'age':'30'}})
 #所有符合条件 age 20 的更新age 为 30
 
 #   删除
-
+collection.delete_many({'age':30})
+collection.delete_one({'name':'外国人'})
