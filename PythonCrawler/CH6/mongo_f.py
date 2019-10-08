@@ -42,3 +42,9 @@ collection.update_many({'age':20},{'$set':{'age':'30'}})
 #   删除
 collection.delete_many({'age':30})
 collection.delete_one({'name':'外国人'})
+
+#    返回列中所有元素（除去重复）不删除
+print(collection.distinct('name'))
+
+
+
