@@ -18,3 +18,26 @@ content_find = [x for x in collection.find({'age':19})]
 print(content_find)
 print(len(content_find))
 #会越来越长，每次运行都插了一遍
+
+#   条件查询
+#   大于        $gt
+#   小于        $lt
+#   大于等于    $gte
+#   小于等于    $lte
+#   等于        $eq
+#   不等于      $ne
+content_find = collection.find({'age':{'$gte':29,'$lte':40}})
+
+
+#   查询
+content_find = collection.find({'age':{'$gte':29,'$lte':40}}).sort('age',1)
+content_find = collection.find({'age':{'$gte':29,'$lte':40}}).sort('age',-1)
+
+#   更新
+collection.update_one({'age':20},{'$set':{'name':'another name'}})
+#第一个符合条件 age 20 的更新name 为 another name
+collection.update_many({'age':20},{'$set':{'age':'30'}})
+#所有符合条件 age 20 的更新age 为 30
+
+#   删除
+

@@ -18,19 +18,8 @@ more_data = [
 ]
 collection.insert_many(more_data)
 
-#   查找
-#   find(条件，返回字段)
-#   find_one(条件，返回字段)
-content_find = collection.find()
-content_find = collection.find({'age':29})
-content_find = collection.find({'age':29},{'_id':0})
-#print(content_find)
-#<pymongo.cursor.Cursor object at 0x00000279C3E3FEF0>
-#可迭代的pyMongo对象，可以被for或者列表生成式展开
-content_find = [x for x in collection.find({'age':19})]
-print(content_find)
-print(len(content_find))
-#会越来越长，每次运行都插了一遍
+#[{'_id': ObjectId('5d9c4cc11f39b302ae08e5d8'), 'id': 123, 'name': 'Raven', 'age': 19}, {'_id': ObjectId('5d9c4cdb8ee140708bf5bf11'), 'id': 123, 'name': 'Raven', 'age': 19}, {'_id': ObjectId('5d9c4f7a6009cd1249b9ac20'), 'id': 123, 'name': 'Raven', 'age': 19}, {'_id': ObjectId('5d9c50ca489510c580616b44'), 'id': 123, 'name': 'Raven', 'age': 19}, {'_id': ObjectId('5d9c50ddb1a1828c88e52d91'), 'id': 123, 'name': 'Raven', 'age': 19}, {'_id': ObjectId('5d9c512fafa15a656ff6cf6f'), 'id': 123, 'name': 'Raven', 'age': 19}, {'_id': ObjectId('5d9c515a1bfa669a3a7da97d'), 'id': 123, 'name': 'Raven', 'age': 19}, {'_id': ObjectId('5d9c5170ae21e3753daa31ed'), 'id': 123, 'name': 'Raven', 'age': 19}]
+#8
 
 
 
