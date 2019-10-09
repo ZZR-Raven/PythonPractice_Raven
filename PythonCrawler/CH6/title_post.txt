@@ -1,0 +1,146 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
+<head>
+<title>龙族5·悼亡者的归来 by 江南 - 小说在线阅读 - 努努书坊</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximumscale=1">
+<link href="/html5/k12.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="/html5/responsive-nav.css">
+<link rel="stylesheet" href="/html5/styles.css">
+<script src="/html5/responsive-nav.js"></script>
+<!-- html5.js for IE less than 9 -->
+<!--[if lt IE 9]>
+	<script src="/html5/html5.js"></script>
+<![endif]-->
+<!-- css3-mediaqueries.js for IE less than 9 -->
+<!--[if lt IE 9]>
+	<script src="/html5/css3-mediaqueries.js"></script>
+<![endif]-->
+<script src="/advs/2024/gg_auto.js"></script>
+</head>
+<body>
+<body>
+<div class="header">
+<div class="logo">努努书坊</div>
+<nav class="nav-collapse">
+    	   <ul>
+			<li><a href="/" target="_parent">首页</a></li>
+			<li><a href="/files/chinese/" target="_parent">华文作品</a></li>
+			<li><a href="/files/world/" target="_parent">外国文学</a></li>
+			<li><a href="/files/yqxs/" target="_parent">穿越言情</a></li>
+			<li><a href="/files/yuanchuang/" target="_parent">网络文学</a></li>
+			<li><a href="/files/xunhuan/" target="_parent">玄幻奇幻</a></li>
+			<li><a href="/files/dushi/" target="_parent">现代都市</a></li>
+			<li><a href="/files/youth/" target="_parent">校园青春</a></li>
+			<li><a href="/files/terrorist/" target="_parent">恐怖灵异</a></li>
+			<li><a href="/wuxia/" target="_parent">武侠小说</a></li>
+			<li><a href="/files/sf/" target="_parent">科幻小说</a></li>
+
+			<li><a href="/author1.html" target="_parent">华人作家</a></li>
+			<li><a href="/author2.html" target="_parent">外国作家</a></li>
+			<li><a href="/author3.html" target="_parent">校园作家</a></li>
+			<li><a href="/author4.html" target="_parent">网络、穿越言情作家</a></li>
+			<li><a href="/author5.html" target="_parent">武侠作家</a></li>
+			<li><a href="/author6.html" target="_parent">网络作家</a></li>
+			<li><a href="/author7.html" target="_parent">侦探推理</a></li>
+			<li><a href="/author8.html" target="_parent">科幻作家</a></li>
+			<li><a href="/author9.html" target="_parent">恐怖灵异作家</a></li>
+			   </ul>
+</nav>
+     <script>
+      var navigation = responsiveNav(".nav-collapse", {
+        animate: true,                    // Boolean: Use CSS3 transitions, true or false
+        transition: 284,                  // Integer: Speed of the transition, in milliseconds
+        label: "Menu",                    // String: Label for the navigation toggle
+        insert: "after",                  // String: Insert the toggle before or after the navigation
+        customToggle: "",                 // Selector: Specify the ID of a custom toggle
+        closeOnNavClick: false,           // Boolean: Close the navigation when one of the links are clicked
+        openPos: "relative",              // String: Position of the opened nav, relative or static
+        navClass: "nav-collapse",         // String: Default CSS class. If changed, you need to edit the CSS too!
+        navActiveClass: "js-nav-active",  // String: Class that is added to <html> element when nav is active
+        jsClass: "js",                    // String: 'JS enabled' class which is added to <html> element
+        init: function(){},               // Function: Init callback
+        open: function(){},               // Function: Open callback
+        close: function(){}               // Function: Close callback
+      });
+     </script>
+</div> 
+
+<div class="main">
+  <div class="crumbs">位置：<a href="https://www.kanunu8.com/">首页</a>><a href='/book2/'>最新更新</a>>-&gt;正文</div>
+  <div class="col-left">
+    <div class="book">
+      <h1>龙族5·悼亡者的归来</h1>
+
+<center><script src="/advs/2024/content_title_728x90.js"></script></center>
+
+<h2>作者: <a target="_blank" href="/files/writer/4460.html">江南</a></h2>
+<div class="description">
+<h3>内容简介：</h3>
+<p>热血龙族，少年归来！这是地狱中的魔王们相互撕咬。铁剑和利爪撕裂空气，留下霜冻和火焰的痕迹，血液刚刚飞溅出来，就被高温化作血红色的蒸汽，冲击波在长长的走廊上来来去去，早已没有任何完整的玻璃，连这座建筑物都摇摇欲坠。 </p>
+</div>
+<dl><dt>正文</dt><dd><a href="194884.html">第1章 全民公敌(1)</a></dd><dd><a href="194885.html">第2章 全民公敌(2)</a></dd><dd><a href="194886.html">第3章 全民公敌(3)</a></dd><dd><a href="194887.html">第4章 全民公敌(4)</a></dd><dd><a href="194888.html">第5章 全民公敌(5)</a></dd><dd><a href="194889.html">第6章 全民公敌(6)</a></dd><dd><a href="194890.html">第7章 全民公敌(7)</a></dd><dd><a href="194891.html">第8章 全民公敌(8)</a></dd><dd><a href="194892.html">第9章 全民公敌(9)</a></dd><dd><a href="194893.html">第10章 全民公敌(10)</a></dd><dd><a href="194894.html">第11章 全民公敌(11)</a></dd><dd><a href="194895.html">第12章 全民公敌(12)</a></dd><dd><a href="194896.html">第13章 全民公敌(12)</a></dd><dd><a href="194897.html">第14章 全民公敌(13)</a></dd><dd><a href="194898.html">第15章 全民公敌(14)</a></dd><dd><a href="194899.html">第16章 全民公敌(15)全文</a></dd><dd><a href="194900.html">第17章 全民公敌(16)</a></dd><dd><a href="194901.html">第18章 全民公敌(17)</a></dd><dd><a href="194902.html">第19章 故人(1)</a></dd><dd><a href="194903.html">第20章 故人(2)</a></dd><dd><a href="194904.html">第21章 故人(3)</a></dd><dd><a href="194905.html">第22章 故人(4)</a></dd><dd><a href="194906.html">第23章 故人(5)</a></dd><dd><a href="194907.html">第24章 故人(6)</a></dd><dd><a href="194908.html">第25章 故人(7)</a></dd><dd><a href="194909.html">第26章 故人(8)</a></dd><dd><a href="194910.html">第27章 故人(9)</a></dd><dd><a href="194911.html">第28章 故人(10)</a></dd><dd><a href="194912.html">第29章 鲸歌(1)</a></dd><dd><a href="194913.html">第30章 鲸歌(2)</a></dd><dd><a href="194914.html">第31章 鲸歌(3)</a></dd><dd><a href="194915.html">第32章 鲸歌(4)</a></dd><dd><a href="194916.html">第33章 鲸歌(5)</a></dd><dd><a href="194917.html">第34章 鲸歌(6)</a></dd><dd><a href="194918.html">第35章 鲸歌(7)</a></dd><dd><a href="194919.html">第36章 鲸歌(8)</a></dd><dd><a href="194920.html">第37章 鲸歌(9)</a></dd><dd><a href="194921.html">第38章 鲸歌(10)</a></dd><dd><a href="194922.html">第39章 鲸歌(11)</a></dd><dd><a href="194923.html">第40章 鲸歌(12)</a></dd><dd><a href="194924.html">第41章 鲸歌(13)</a></dd><dd><a href="194925.html">第42章 鲸歌(14)</a></dd><dd><a href="194926.html">第43章 鲸歌(15)</a></dd><dd><a href="194927.html">第44章 鲸歌(16)</a></dd><dd><a href="194928.html">第45章 鲸歌(17)</a></dd><dd><a href="194929.html">第46章 鲸歌(18)</a></dd><dd><a href="194930.html">第47章 鲸歌(19)</a></dd><dd><a href="194931.html">第48章 鲸歌(20)</a></dd><dd><a href="194932.html">第49章 鲸歌(21)</a></dd><dd><a href="194933.html">第50章 雷霆与守望者(1)</a></dd><dd><a href="194934.html">第51章 雷霆与守望者(2)</a></dd><dd><a href="194935.html">第52章 雷霆与守望者(3)</a></dd><dd><a href="194936.html">第53章 雷霆与守望者(4)</a></dd><dd><a href="194937.html">第54章 雷霆与守望者(5)</a></dd><dd><a href="194938.html">第55章 雷霆与守望者(6)</a></dd><dd><a href="194939.html">第56章 雷霆与守望者(7)</a></dd><dd><a href="194940.html">第57章 雷霆与守望者(8)</a></dd><dd><a href="194941.html">第58章 雷霆与守望者(9)</a></dd><dd><a href="194942.html">第59章 雷霆与守望者(10)</a></dd><dd><a href="194943.html">第60章 雷霆与守望者(11)</a></dd><dd><a href="194944.html">第61章 雷霆与守望者(12)</a></dd><dd><a href="194945.html">第62章 雷霆与守望者(13)</a></dd><dd><a href="194946.html">第63章 雷霆与守望者(14)</a></dd><dd><a href="194947.html">第64章 雷霆与守望者(15)</a></dd><dd><a href="194948.html">第65章 雷霆与守望者(16)</a></dd><dd><a href="194949.html">第66章 雷霆与守望者(17)</a></dd><dd><a href="194950.html">第67章 雷霆与守望者(18)</a></dd><dd><a href="194951.html">第68章 雷霆与守望者(19)</a></dd><dd><a href="194952.html">第69章 雷霆与守望者(20)</a></dd><dd><a href="194953.html">第70章 雷霆与守望者(21)</a></dd><dd><a href="194954.html">第71章 雷霆与守望者(22)</a></dd><dd><a href="194955.html">第72章 雷霆与守望者(23)</a></dd><dd><a href="194956.html">第73章 雷霆与守望者(24)</a></dd><dd><a href="194957.html">第74章 雷霆与守望者(25)</a></dd><dd><a href="194958.html">第75章 雷霆与守望者(26)</a></dd><dd><a href="194959.html">第76章 雷霆与守望者(27)</a></dd><dd><a href="194960.html">第77章 雷霆与守望者(28)</a></dd><dd><a href="194961.html">第78章 雷霆与守望者(29)</a></dd><dd><a href="194962.html">第79章 雷霆与守望者(30)</a></dd><dd><a href="194963.html">第80章 雷霆与守望者(31)</a></dd><dd><a href="194964.html">第81章 雷霆与守望者(32)</a></dd><dd><a href="194965.html">第82章 雷霆与守望者(33)</a></dd><dd><a href="194966.html">第83章 雷霆与守望者(34)</a></dd><dd><a href="194967.html">第84章 雷霆与守望者(35)</a></dd><dd><a href="194968.html">第85章 雷霆与守望者(36)</a></dd><dd><a href="194969.html">第86章 利维坦之歌(1)</a></dd><dd><a href="194970.html">第87章 利维坦之歌(2)</a></dd><dd><a href="194971.html">第88章 利维坦之歌(3)</a></dd><dd><a href="194972.html">第89章 利维坦之歌(4)</a></dd><dd><a href="194973.html">第90章 利维坦之歌(5)</a></dd><dd><a href="194974.html">第91章 利维坦之歌(6)</a></dd><dd><a href="194975.html">第92章 利维坦之歌(7)</a></dd><dd><a href="194976.html">第93章 利维坦之歌(8)</a></dd><dd><a href="194977.html">第94章 利维坦之歌(9)</a></dd><dd><a href="194978.html">第95章 利维坦之歌(10)</a></dd><dd><a href="194979.html">第96章 利维坦之歌(11)</a></dd><dd><a href="194980.html">第97章 但为君故(1)</a></dd><dd><a href="194981.html">第98章 但为君故(2)</a></dd><dd><a href="194982.html">第99章 但为君故(3)</a></dd><dd><a href="194983.html">第100章 但为君故(4)</a></dd><dd><a href="194984.html">第101章 但为君故(5)</a></dd><dd><a href="194985.html">第102章 但为君故(6)</a></dd><dd><a href="194986.html">第103章 但为君故(7)</a></dd><dd><a href="194987.html">第104章 但为君故(8)</a></dd><dd><a href="194988.html">第105章 但为君故(9)</a></dd><dd><a href="194989.html">第106章 但为君故(10)</a></dd><dd><a href="194990.html">第107章 但为君故(11)</a></dd><dd><a href="194991.html">第108章 但为君故(12)</a></dd><dd><a href="194992.html">第109章 但为君故(13)</a></dd><dd><a href="194993.html">第110章 但为君故(14)</a></dd><dd><a href="194994.html">第111章 但为君故(15)</a></dd><dd><a href="194995.html">第112章 但为君故(16)</a></dd><dd><a href="194996.html">第113章 但为君故(17)</a></dd><dd><a href="195273.html">第114章 但为君故(18)</a></dd><dd><a href="195274.html">第115章 但为君故(19)</a></dd><dd><a href="195275.html">第116章 但为君故(20)</a></dd><dd><a href="195276.html">第117章 但为君故(21)</a></dd><dd><a href="195277.html">第118章 但为君故(22)</a></dd><dd><a href="195278.html">第119章 但为君故(23)</a></dd><dd><a href="195279.html">第120章 但为君故(24)</a></dd><dd><a href="195280.html">第121章 但为君故(25)</a></dd><dd><a href="195281.html">第122章 但为君故(26)</a></dd><dd><a href="195282.html">第123章 但为君故(27)</a></dd><dd><a href="195283.html">第124章 但为君故(28)</a></dd><dd><a href="195284.html">第125章 但为君故(29)</a></dd><dd><a href="195285.html">第126章 但为君故(30)</a></dd><dd><a href="195286.html">第127章 但为君故(31)</a></dd><dd><a href="195287.html">第128章 但为君故(32)</a></dd><dd><a href="195288.html">第129章 但为君故(33)</a></dd><dd><a href="195289.html">第130章 但为君故(34)</a></dd><dd><a href="195290.html">第131章 但为君故(35)</a></dd><dd><a href="195291.html">第132章 但为君故(36)</a></dd><dd><a href="195292.html">第133章 但为君故(37)</a></dd><dd><a href="195293.html">第134章 但为君故(38)</a></dd><dd><a href="195294.html">第135章 但为君故(39)</a></dd><dd><a href="195295.html">第136章 但为君故(40)</a></dd><dd><a href="195296.html">第137章 但为君故(41)</a></dd><dd><a href="195297.html">第138章 但为君故(42)</a></dd><dd><a href="195298.html">第139章 但为君故(43)</a></dd><dd><a href="195299.html">第140章 但为君故(44)</a></dd><dd><a href="195300.html">第141章 但为君故(45)</a></dd><dd><a href="195301.html">第142章 但为君故(46)</a></dd><dd><a href="195302.html">第143章 但为君故(47)</a></dd><dd><a href="195303.html">第144章 但为君故(48)</a></dd><dd><a href="195304.html">第145章 但为君故(49)</a></dd><dd><a href="195305.html">第146章 但为君故(50)</a></dd><dd><a href="195306.html">第147章 但为君故(51)</a></dd><dd><a href="195648.html">第148章 但为君故(52)</a></dd><dd><a href="195649.html">第149章 但为君故(53)</a></dd><dd><a href="195650.html">第150章 但为君故(54)</a></dd><dd><a href="197939.html">第151章 但为君故(55)</a></dd><dd><a href="197940.html">第152章 但为君故(56)</a></dd><dd><a href="197941.html">第153章 但为君故(57)</a></dd>
+<div class="clear"></div>
+</dl>
+
+<div class="dede_pages" align="center">上一篇：<a href='/book2/10942/index.html'>星汉灿烂，幸甚至哉</a>  &nbsp; 下一篇：<a href='/book2/10944/index.html'>致我们暖暖的小时光</a> <br>&nbsp;<br></div>
+
+  </div>
+ </div>
+
+  <div class="side-r">
+		  <table style="padding-right:5px" width="99%" border="0" cellpadding="3" cellspacing="1" >
+            <tr>
+              <td class="bt1" align="left"><span class="style4"><strong>　分类专题小说</strong></span></td>
+            </tr>
+            <tr>
+              <td align="left" valign="top" bgcolor="#FFFFFF" class="td10-27b">
+              	<li>　　● <a href="/files/14.html">影视文学</a>　　● <a href="/files/5.html">盗墓小说</a></li>
+              	<li>　　● <a href="/files/311.html">官场小说</a>　　● <a href="/files/8.html">鬼故事大全</a></li>
+              	<li>　　● <a href="/files/2.html">职场小说</a>　　● <a href="/files/16.html">诺贝尔文学奖作品</a></li></li>
+              	<li>　　● <a href="/files/3.html">游戏小说</a>　　● <a href="/files/314.html">商战小说</a></li>
+              	<li>　　● <a href="/files/4.html">传记纪实</a>　　● <a href="/files/314.html">吸血鬼小说</a></li>
+              	<li>　　● <a href="/tuili/">侦探推理</a>　　● <a href="/files/11.html">仙侠修真</a></li>
+              	<li>　　● <a href="/files/13.html">历史军事</a>　　● <a href="/files/15.html">韩流文学</a></li>
+              	<li>　　● <a href="/files/old/">古典文学</a>　　● <a href="/files/little/">短篇作品</a></li>
+              	<li>　　● <a href="/zt/">专题推荐</a>　　● <a href="/files/writer/">所有作家</a></li>
+              </td>
+            </tr>
+      </table>
+			<table style="padding-right:5px" width="99%" border="0" cellpadding="3" cellspacing="1" >
+            <tr>
+              <td><script src="/advs/2024/gg_300x600.js"></script></td>
+            </tr>
+      </table>
+		  <table style="padding-right:5px" width="99%" border="0" cellpadding="3" cellspacing="1" >
+            <tr>
+              <td class="bt1" align="left"><span class="style4"><strong>　热门作家作品集</strong></span></td>
+            </tr>
+            <tr>
+              <td align="left" valign="top" bgcolor="#FFFFFF" class="td10-27b">
+              	<li>　　● <a href="/files/writer/1874.html">匪我思存作品集</a></li>
+              	<li>　　● <a href="/files/writer/1415.html">桐华作品集</a></li>
+              	<li>　　● <a href="/files/writer/696.html">天下霸唱(张牧野)作品集</a></li>
+              	<li>　　● <a href="/files/writer/8236.html">莫言作品集</a></li>
+              	<li>　　● <a href="/files/writer/2530.html">辛夷坞作品集</a></li>
+              	<li>　　● <a href="/files/writer/8675.html">严歌苓作品集</a></li>
+              	<li>　　● <a href="/files/writer/130.html">郭敬明作品集</a></li>
+              	<li>　　● <a href="/files/writer/4365.html">九夜茴作品集</a></li>
+              	<li>　　● <a href="/files/writer/125.html">明晓溪作品集</a></li>
+              	<li>　　● <a href="/files/writer/1862.html">唐七公子作品集</a></li>
+              </td>
+            </tr>
+      </table>
+<br>
+  	</div>
+</div>
+<div class="footer">
+<p class="info">本站作品收集整理自网络, 版权归属拥有者全权所有, 如侵犯了您的利益，请联系删除 - <font color="#dc143c">kikitree#live.com</font><br></p>
+<div style="display:none">
+<script src="/stat.php?view=yes&aid=10943&mid=0" language="javascript"></script>
+</div>
+</div>
+</body>
+</html>
