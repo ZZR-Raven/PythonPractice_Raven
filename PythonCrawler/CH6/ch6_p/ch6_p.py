@@ -10,13 +10,14 @@ pool = redis.ConnectionPool()
 client = redis.Redis(connection_pool=pool)
 
 ori_code = requests.get('https://www.kanunu8.com/book3/7750/').content.decode(encoding = 'GB2312')
-with open('title_get.txt','w',encoding='utf-8') as txt1:
-   txt1.write(ori_code)
+# with open('title_get.txt','w',encoding='utf-8') as txt1:
+#    txt1.write(ori_code)
 selector = etree.HTML(ori_code)
-url_list = selector.xpath('/html/body/div[1]/table[9]/tbody/tr[4]/td/table[2]/tbody/tr[2]/td[1]/a')
-for url in url_list:
-  client.lpush('url_queue',url)
-
+url_list = selector.xpath('//tbody/tr/td/a/@href')
+print(url_list)
+# for url in url_list:
+#   client.lpush('url_queue',url)
+# print(client.llen('url_queue'))
 
 
 # selector = etree.HTML(title_code)
