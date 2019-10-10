@@ -14,22 +14,34 @@ ori_code = requests.get('https://www.kanunu8.com/book3/7750/').content.decode(en
 #    txt1.write(ori_code)
 selector = etree.HTML(ori_code)
 url_list = selector.xpath('//tbody/tr/td/a/@href')
-print(url_list)
-# for url in url_list:
-#   client.lpush('url_queue',url)
-# print(client.llen('url_queue'))
+url_list.pop(0)
+url_count = len(url_list)
 
+for url in url_list:
+    real_url = 'https://www.kanunu8.com/book3/7750/'+url
+    client.sadd('url_set',real_url)         #set元素不能重复
+    # print('\n',real_url)
+# print(client.scard('url_set'))
 
-# selector = etree.HTML(title_code)
-# url_list = selector.xpath('/html/body/div[2]/div[2]/div/dl/dd[1]/a')
-# for url in url_list:
-#   client.lpush('url_queue',url)
 
 # content_list = []
-# while client.llen('url_queue') == 0:
-#     url = loop('url_queue').decode()
-#     source = requests.get(url).content
-#     selector = html.fromstring(source)
-#     ch_name = selector.xpath('xpath')[0]
-#     content_list.append('title':ch_name,'content':'\n'.join(content))
+
+url_b = client.spop('url_set')
+url_s = str(url_b,encoding='utf-8')
+print(url_s)
+ch_code = requests.get(str(url_s)).content.decode(encoding = 'GB2312')
+selector = etree.HTML(ch_code)
+ch_pre = selector.xpath('//tbody/tr/td/p/@nbsp')
+print(len(ch_pre))
+
+# while client.scard('url_set') == 0:
+    # 从set里面取一个网址
+    # url = client.spop('url_set')
+    # ch_code = requests.get(url).content.decode(encoding = 'GB2312')
+    # selector = etree.HTML(ch_code)
+    # ch_pre = selector.xpath('//tbody/tr/td/text')
+    # print(ch_pre)
+    # selector = html.fromstring(source)
+    # ch_name = selector.xpath('xpath')[0]
+    # content_list.append('title':ch_name,'content':'\n'.join(content))
 # handler.insert(content_list)
