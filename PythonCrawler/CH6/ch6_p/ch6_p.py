@@ -18,21 +18,26 @@ url_list.pop(0)
 
 for url in url_list:
     real_url = 'https://www.kanunu8.com/book3/7750/'+url
-    client.lpush('url_list',real_url)     
+    client.lpush('url_list',real_url)    
+    print(real_url) 
 
 count = 1
-#while client.llen('url_list') != 0 :
-    #从redis list里面获取并删除一个网址
-url_b = client.lpop('url_list')
-url_s = str(url_b,encoding='utf-8')
-ch_code = requests.get(str(url_s)).content.decode(encoding = 'GB2312')
-selector = etree.HTML(ch_code)
-#要从源码看，chrome直接复制xpath可能有多余的误导标签
-ch_pre = selector.xpath('/html/body/div[@align="center"]/table/tr/td/p/text()')
-print(ch_pre)
-    # with open('龙族前传.txt','w',encoding='utf-8') as txt2:
-    #     txt2.write(ch_code)
-    #     print('ch%sdone'%count)
+while client.llen('url_list') != 0 :
+    # 从redis list里面获取并删除一个网址
+    url_b = client.lpop('url_list')
+    url_s = str(url_b,encoding='utf-8')
+    if count <= 6:
+        ch_code = requests.get(url_s).content.decode(encoding = 'GB2312')
+    else:       #这个沙雕网站前7章跟后面不是同一种编码格式
+        ch_code = requests.get(url_s).content.decode(encoding = 'gbk')
+    selector = etree.HTML(ch_code)
+    #要从源码看，chrome直接复制xpath可能有多余的误导标签
+    ch_pre = selector.xpath('/html/body/div[@align="center"]/table/tr/td/p/text()')
+    print(ch_pre)
+    with open('龙族前传.txt','a',encoding='utf-8') as txt2:  #
+        txt2.write(ch_code)
+        print('ch%sdone'%count)
+        count = count + 1
 
 
 
