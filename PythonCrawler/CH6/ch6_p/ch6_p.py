@@ -1,5 +1,4 @@
 #需要连接resis，检查url_lst是否被清空
-#需要清空 龙族前传.txt里内容
 
 
 import scrapy
@@ -24,6 +23,11 @@ url_list.pop(0)     #去掉第一个无用网址
 for url in url_list:
     real_url = 'https://www.kanunu8.com/book3/7750/'+url
     client.lpush('url_list',real_url)    
+
+#   先清空目标txt文件防止被重复写入
+with open('龙族前传.txt','w',encoding='utf-8') as temp:  #
+    temp.truncate()
+
 
 count = 1
 #   爬取小说正文
