@@ -26,13 +26,21 @@ for url in url_list:
 
 # content_list = []
 
+
+
+#                                   xpath testing
 url_b = client.spop('url_set')
 url_s = str(url_b,encoding='utf-8')
 print(url_s)
 ch_code = requests.get(str(url_s)).content.decode(encoding = 'GB2312')
+with open('text_get.html','w',encoding='utf-8') as txt2:
+   txt2.write(ch_code)
+
 selector = etree.HTML(ch_code)
-ch_pre = selector.xpath('//tbody/tr/td/p/@nbsp')
+ch_pre = selector.xpath('/html/body/div[@align="center"]/table/tr/td/p/text()')
 print(len(ch_pre))
+print(ch_pre)
+
 
 # while client.scard('url_set') == 0:
     # 从set里面取一个网址
