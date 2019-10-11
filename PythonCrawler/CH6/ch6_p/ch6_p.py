@@ -10,36 +10,30 @@ pool = redis.ConnectionPool()
 client = redis.Redis(connection_pool=pool)
 
 ori_code = requests.get('https://www.kanunu8.com/book3/7750/').content.decode(encoding = 'GB2312')
-# with open('title_get.txt','w',encoding='utf-8') as txt1:
-#    txt1.write(ori_code)
+with open('title_get.html','w',encoding='utf-8') as txt1:
+    txt1.write(ori_code)
 selector = etree.HTML(ori_code)
 url_list = selector.xpath('//tbody/tr/td/a/@href')
 url_list.pop(0)
-url_count = len(url_list)
 
 for url in url_list:
     real_url = 'https://www.kanunu8.com/book3/7750/'+url
-    client.sadd('url_set',real_url)         #set元素不能重复
-    # print('\n',real_url)
-# print(client.scard('url_set'))
+    client.lpush('url_list',real_url)     
 
-
-# content_list = []
-
-
-
-#                                   xpath testing
-url_b = client.spop('url_set')
+count = 1
+#while client.llen('url_list') != 0 :
+    #从redis list里面获取并删除一个网址
+url_b = client.lpop('url_list')
 url_s = str(url_b,encoding='utf-8')
-print(url_s)
 ch_code = requests.get(str(url_s)).content.decode(encoding = 'GB2312')
-with open('text_get.html','w',encoding='utf-8') as txt2:
-   txt2.write(ch_code)
-
 selector = etree.HTML(ch_code)
+#要从源码看，chrome直接复制xpath可能有多余的误导标签
 ch_pre = selector.xpath('/html/body/div[@align="center"]/table/tr/td/p/text()')
-print(len(ch_pre))
 print(ch_pre)
+    # with open('龙族前传.txt','w',encoding='utf-8') as txt2:
+    #     txt2.write(ch_code)
+    #     print('ch%sdone'%count)
+
 
 
 # while client.scard('url_set') == 0:
