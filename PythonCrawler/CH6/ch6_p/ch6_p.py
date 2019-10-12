@@ -1,6 +1,3 @@
-#需要连接resis，检查url_lst是否被清空
-
-
 import scrapy
 import lxml
 import requests
@@ -13,6 +10,13 @@ from scrapy.selector import Selector
 #   redis连接
 pool = redis.ConnectionPool() 
 client = redis.Redis(connection_pool=pool)
+
+#确保名为url_list的redis list不存在
+if client.exists('url_list') == True:
+    client.delete('url_list')
+    print('the key has been deleted ')
+else:
+    print('the key isn\'t exists')
 
 #   爬取小说每章节url
 ori_code = requests.get('https://www.kanunu8.com/book3/7750/').content.decode(encoding = 'gb2312')
@@ -46,9 +50,9 @@ while client.llen('url_list') != 0 :
     # decode 记得ignore
     ch_code = ch_byte.decode(encoding = charset,errors = 'ignore')
     selector = etree.HTML(ch_code)
+    
     # 要从源码看，chrome直接复制xpath可能有多余的误导标签
     ch_pre = selector.xpath('/html/body/div[@align="center"]/table/tr/td/p/text()')
-    print(type(ch_pre))    
     with open('龙族前传.txt','a',encoding='utf-8') as txt2:  
         txt2.writelines(ch_pre)
         print('ch%sdone'%count)
