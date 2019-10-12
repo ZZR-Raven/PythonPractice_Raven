@@ -46,10 +46,9 @@ while client.llen('url_list') != 0 :
     # decode 记得ignore
     ch_code = ch_byte.decode(encoding = charset,errors = 'ignore')
     selector = etree.HTML(ch_code)
-
     # 要从源码看，chrome直接复制xpath可能有多余的误导标签
     ch_pre = selector.xpath('/html/body/div[@align="center"]/table/tr/td/p/text()')
-    
+    print(type(ch_pre))    
     with open('龙族前传.txt','a',encoding='utf-8') as txt2:  
         txt2.writelines(ch_pre)
         print('ch%sdone'%count)
