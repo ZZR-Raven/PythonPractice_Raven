@@ -6,6 +6,7 @@ import lxml
 import requests
 import redis
 import pymongo
+import chardet
 from lxml import etree
 from scrapy.selector import Selector
 
@@ -14,7 +15,7 @@ pool = redis.ConnectionPool()
 client = redis.Redis(connection_pool=pool)
 
 #   爬取小说每章节url
-ori_code = requests.get('https://www.kanunu8.com/book3/7750/').content.decode(encoding = 'GB2312')
+ori_code = requests.get('https://www.kanunu8.com/book3/7750/').content.decode(encoding = 'gb2312')
 selector = etree.HTML(ori_code)
 url_list = selector.xpath('//tbody/tr/td/a/@href')
 url_list.pop(0)     #去掉第一个无用网址
@@ -35,10 +36,15 @@ while client.llen('url_list') != 0 :
     # 从redis list里面获取并删除一个网址
     url_b = client.rpop('url_list')
     url_s = str(url_b,encoding='utf-8')
-    if count <= 4:
-        ch_code = requests.get(url_s).content.decode(encoding = 'GB2312')
-    else:       #这个沙雕网站前4章跟后面不是同一种编码格式
-        ch_code = requests.get(url_s).content.decode(encoding = 'gbk')
+    ch_byte = requests.get(url_s).content
+    charset_dict = chardet.detect(ch_byte)
+    charset = charset_dict['encoding']
+    print('charset = ',charset)
+    ch_code = ch_byte.decode(encoding = charset,errors = 'ignore')
+    # if count <= 4:
+    #     ch_code = requests.get(url_s).content.decode(encoding = 'GB2312')
+    # else:       #这个沙雕网站前4章跟后面不是同一种编码格式
+    #     ch_code = requests.get(url_s).content.decode(encoding = 'gbk')
     selector = etree.HTML(ch_code)
     #要从源码看，chrome直接复制xpath可能有多余的误导标签
     ch_pre = selector.xpath('/html/body/div[@align="center"]/table/tr/td/p/text()')
