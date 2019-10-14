@@ -1,7 +1,7 @@
 from selenium import webdriver
+# import chromedriver 
 
-# driver = webdriver.chrome()
-
+driver = webdriver.Chrome()
 
 
 

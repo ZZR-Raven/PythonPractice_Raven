@@ -20,8 +20,9 @@ pip install json
 
 pip install selenium
 
-pip install chromedriver
-
 pip install scrapy
 
 pip install chardet
+
+pip install chromedriver
+C:\Users\Raven\Anaconda3\Scripts
