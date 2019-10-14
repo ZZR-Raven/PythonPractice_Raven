@@ -1,0 +1,27 @@
+pip install pylink
+
+pip install functools
+
+pip install re
+
+pip install requests
+
+pip install multiprocess
+
+pip install BeautifulSoup4
+
+pip install lxml
+
+pip install pymongo
+
+pip install redis
+
+pip install json
+
+pip install selenium
+
+pip install chromedriver
+
+pip install scrapy
+
+pip install chardet
