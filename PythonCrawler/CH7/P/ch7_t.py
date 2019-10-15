@@ -3,10 +3,12 @@ import json
 import requests
 
 class letvspider(object):
-    comment_url = '''http://api.my.le.com/vcm/api/list?jsonp=
-                    jQuery19105007007288198038_1571038193018&type=video&rows=
-                    20&page=1&sort=&cid=1&source=1&xid=31637808&pid=10043181&
-                    ctype=cmt%2Cimg%2Cvote&listType=1&_=1571038193024'''
+    comment_url = '''https://control-i.iqiyi.com/control/content_config
+                    ?albumid=0&block=B&business=like&categoryid=
+                    &is_iqiyi=true&is_video_page=true&qypid=01010011010000000000
+                    &rpage=aHR0cHM6Ly93d3cuaXFpeWkuY29tL3ZfMTlydTRxeGlxYy5odG1s&s2=aHR0cHM6Ly93d3cuaXFpeWkuY29tL2RpYW55aW5nLw%3D%3D
+                    &tvid=7854817400
+                    &uid=0&version=1.0.0&callback=jsonp_1571153470846_64378'''
 
     headers = {
         'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
@@ -33,15 +35,15 @@ class letvspider(object):
 
     # @staticmethod
     def get_necessary_id(self):
-        source = self.get_source(self.url,self.headers)
-        vid = re.search(r'vid: (\d+)',source).group(1)
-        pid = re.search(r'pid: (\d+)',source).group(1)
-        self.necessary_info['xid'] = vid
-        self.necessary_info['pid'] = pid
+        # source = self.get_source(self.url,self.headers)
+        # vid = re.search(r'vid: (\d+)',source).group(1)
+        # pid = re.search(r'pid: (\d+)',source).group(1)
+        self.necessary_info['tvid'] = 7854817400#vid
+        self.necessary_info['pid'] = 340992 #pid
 
     def get_comment(self):
-        self.url = self.comment_url.format(xid=self.necessary_info['xid'],
-                                      pid=self.necessary_info['pid'])
+        # self.url = self.comment_url.format(tvid=self.necessary_info['tvid'],
+        #                               pid=self.necessary_info['pid'])
         print(self.url)
         source = self.get_source(self.url,self.headers)
         source_json = source[source.find('{"'): -1]
@@ -51,5 +53,5 @@ class letvspider(object):
             print(f'发帖人:{comment["user"]["username"]}, 评论内容：{comment["content"]}')
 
 if __name__ == '__main__':
-    spider = letvspider('http://www.le.com/ptv/vplay/31637808.html?ref=index_focus_1')
+    spider = letvspider('https://static.iqiyi.com/js/common/mars_v.js?1571153466207')
 
