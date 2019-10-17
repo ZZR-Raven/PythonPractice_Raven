@@ -1,5 +1,6 @@
 import requests
-
+import urllib3
+urllib3.disable_warnings()
 
 header = {
     'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
@@ -18,6 +19,6 @@ header = {
 
 session = requests.Session()
 source = session.get('https://www.zhihu.com',headers=header,verify=False).content.decode("utf-8","ignore")
-print(source)
+# print(source)
 
 

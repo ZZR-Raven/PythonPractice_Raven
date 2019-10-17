@@ -26,3 +26,9 @@ pip install chardet
 
 #pip install chromedriver
 C:\Users\Raven\Anaconda3\Scripts
+
+pip install cryptography
+
+pip install pyOpenSSL
+
+pip install certifi
