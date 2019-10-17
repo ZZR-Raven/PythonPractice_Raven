@@ -40,8 +40,8 @@ class letvspider(object):
         self.necessary_info['pid'] = pid
 
     def get_comment(self):
-        self.url = self.comment_url.format(xid=self.necessary_info['xid'],
-                                      pid=self.necessary_info['pid'])
+        self.url = self.comment_url#.format(xid=self.necessary_info['xid'],
+                                    #  pid=self.necessary_info['pid'])
         print(self.url)
         source = self.get_source(self.url,self.headers)
         source_json = source[source.find('{"'): -1]
@@ -51,5 +51,5 @@ class letvspider(object):
             print(f'发帖人:{comment["user"]["username"]}, 评论内容：{comment["content"]}')
 
 if __name__ == '__main__':
-    spider = letvspider('http://www.le.com/ptv/vplay/31637808.html?ref=index_focus_1')
+    spider = letvspider('http://www.le.com/ptv/vplay/31637808.html')
 
