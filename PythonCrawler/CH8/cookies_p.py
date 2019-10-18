@@ -19,6 +19,6 @@ header = {
 
 session = requests.Session()
 source = session.get('https://www.zhihu.com',headers=header,verify=False).content.decode("utf-8","ignore")
-# print(source)
+print(source)
 
 
