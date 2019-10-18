@@ -11,14 +11,17 @@ driver.maximize_window()
 driver.get(r"https://www.zhihu.com/signup?next=%2F")
 
 #切换到登录页面
-driver.find_element_by_xpath('//*[@id="root"]/div/main/div/div/div/div[2]/div[2]/span').click()
+lg = '//*[@id="root"]/div/main/div/div/div[1]/div/form/div[1]/div[2]'
+driver.find_element_by_xpath(lg).click()
 
 #给输入框赋值
-driver.find_element_by_xpath('//*[@id="root"]/div/main/div/div/div/div[2]/div[1]/form/div[1]/div[2]/div[1]/input').clear.send_keys('13376585136')
-driver.find_element_by_xpath('//*[@id="root"]/div/main/div/div/div/div[2]/div[1]/form/div[2]/div/div[1]/input').clear.send_keys('Raven991124Zhihu')
+un = '//*[@id="root"]/div/main/div/div/div[1]/div/form/div[2]/div/label/input'
+pd = '//*[@id="root"]/div/main/div/div/div[1]/div/form/div[3]/div/label/input'
+driver.find_element_by_xpath(un).send_keys('13376585136')
+driver.find_element_by_xpath(pd).send_keys('Raven991124Zhihu')
 input('请在网页上点击倒立的文字，完成以后回到这里按任意键继续。')
 #模拟点击事件
-driver.find_element_by_xpath('//*[@id="root"]/div/main/div/div/div/div[2]/div[1]/form/button').click()
+# driver.find_element_by_xpath('//*[@id="root"]/div/main/div/div/div/div[2]/div[1]/form/button').click()
 
 print(driver.title)
 
