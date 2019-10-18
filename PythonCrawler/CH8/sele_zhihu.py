@@ -23,7 +23,7 @@ input('请在网页上点击倒立的文字，完成以后回到这里按任意�
 #模拟点击事件
 # driver.find_element_by_xpath('//*[@id="root"]/div/main/div/div/div/div[2]/div[1]/form/button').click()
 
-print(driver.title)
+# print(driver.title)
 
 
 # elem = driver.find_element_by_xpath("//*[@id='root']/div/main/div/div/div[1]/div/form/div[2]/div/label/input") #寻找账号输入框
