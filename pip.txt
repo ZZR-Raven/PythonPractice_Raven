@@ -32,3 +32,5 @@ pip install cryptography
 pip install pyOpenSSL
 
 pip install certifi
+
+https://github.com/tesseract-ocr/tesseract/wiki/Downloads
