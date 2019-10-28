@@ -31,11 +31,11 @@ input('手动输入账号密码')
 
 temp = driver.get('http://xsgl.7i5q.cas.scut.edu.cn/sms2/student/evaluation/intellectualList.jsp')
 temp_source = driver.page_source
-# print(temp_source)
+print(temp_source)
 num_list = []
-num_list = re.findall('evaluationId=(\\d*)&classYearId=13',temp_source,re.S)
+num_list = re.findall('evaluationId=(.*?)&amp;classYearId=13',temp_source,re.S)
 print(num_list)
-
+# ['4461', '2911', '10233', '10245', '10246', '10249', '10254', '10257', '7490', '10283', '10285', '10298', '10300', '10303', '10305', '10307', '10334', '10337', '10343', '10348', '10362', '10369', '949', '10379', '10392', '6552', '10400', '10407', '4841', '1319', '10431', '3422', '10450', '1024', '6577', '3375', '10475', '10478', '10723', '6563', '4850', '10893', '10900']
 
 # target_url = 'http://xsgl.7i5q.cas.scut.edu.cn/sms2/student/evaluation/intellectualList.jsp'
 # session = requests.Session()
@@ -44,14 +44,6 @@ print(num_list)
 # # print(type(source_))
 # with open('html_get.txt','w') as h1:
 #     h1.write(str(source))
-
-
-
-real_url = []
-
-
-
-
 
 
 # with open('zhiyu_info.html',encoding='utf-8') as aaa:
