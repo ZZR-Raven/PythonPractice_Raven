@@ -1,5 +1,4 @@
-
-# import re
+import re
 # import json
 import requests
 # from selenium import webdriver
@@ -9,28 +8,7 @@ import requests
 # import lxml
 
 smsurl = 'http://www.scut.edu.cn/sms/'
-# driver = webdriver.Chrome()
-# driver.get(smsurl)
 
-# input('手动输入账号密码')
-
-# header = {
-#             'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
-#             'Accept-Encoding': 'gzip, deflate, br',
-#             'Accept-Language': 'zh-CN,zh;q=0.9',
-#             'Cache-Control': 'max-age=0',
-#             'Connection': 'keep-alive',
-#             # 'Content-Length': '365',
-#             'Content-Type': 'application/x-www-form-urlencoded',
-#             'Cookie': 'JSESSIONID=8081BCF40750B46F8B4BD9DDE4CDA8BA; Language=zh_CN; clwz_blc_pst_SSO=79767242.38943',
-#             'DNT': '1',
-#             'Host': 'sso.scut.edu.cn',
-#             # 'Origin': 'https://sso.scut.edu.cn',
-#             # 'Referer': 'https://sso.scut.edu.cn/cas/login?service=http%3A%2F%2Fxsgl.7i5q.cas.scut.edu.cn%3A80%2Fsms2%2Fhomepage.jsp',
-#             'Upgrade-Insecure-Requests': '1',
-#             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.81 Safari/537.36'
-
-# }
 
 header = {
             'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
@@ -45,12 +23,29 @@ header = {
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.81 Safari/537.36'
         }
 
-
-
 session = requests.Session()
 source = session.get(smsurl,headers=header,verify=False).content.decode(encoding = 'gb2312',errors = 'ignore')
-print(source)
+# print(source)
 
+header_js1 = {
+
+                'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+                'Accept-Encoding': 'gzip, deflate',
+                'Accept-Language': 'zh-CN,zh;q=0.9',
+                'Cache-Control': 'max-age=0',
+                'Connection': 'keep-alive',
+                'Cookie': 'JSESSIONID=7CD7DDBDF23B47A79CCFB66789DE8293.student54_3; JSESSIONID=6631375ADC8085C4081CFF7CEDE99DDB.student54_3',
+                'DNT': '1',
+                'Host': 'xsgl.7i5q.cas.scut.edu.cn',
+                'Referer': 'http://xsgl.7i5q.cas.scut.edu.cn/sms2/',
+                'Upgrade-Insecure-Requests': '1',
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.81 Safari/537.36'
+}
+
+js1 = re.findall('src="(.*?)">',source)[1]
+# print(js1)
+js1_html = session.get(js1,headers=header_js1,verify=False).content.decode(encoding = 'utf-8',errors = 'ignore')
+print(js1_html)
 
 
 # encoding = 'gb2312',errors = 'ignore'
