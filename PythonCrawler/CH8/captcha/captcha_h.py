@@ -17,4 +17,4 @@ with open('captcha.png','wb') as f:
 captcha = input('手动查看chptcha.png，输入验证码')
 after_check = session.post(url_check,data={'captcha':captcha})
 
-print(f'输入验证码后网站返回：{after_check.content.decode()}')
+print(f'输入验证码后网站返回:{after_check.content.decode()}')
