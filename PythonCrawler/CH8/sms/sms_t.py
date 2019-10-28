@@ -29,21 +29,19 @@ source = session.get(smsurl,headers=header,verify=False).content.decode(encoding
 
 header_js1 = {
 
-                'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
-                'Accept-Encoding': 'gzip, deflate',
-                'Accept-Language': 'zh-CN,zh;q=0.9',
-                'Cache-Control': 'max-age=0',
-                'Connection': 'keep-alive',
-                'Cookie': 'JSESSIONID=7CD7DDBDF23B47A79CCFB66789DE8293.student54_3; JSESSIONID=6631375ADC8085C4081CFF7CEDE99DDB.student54_3',
-                'DNT': '1',
-                'Host': 'xsgl.7i5q.cas.scut.edu.cn',
-                'Referer': 'http://xsgl.7i5q.cas.scut.edu.cn/sms2/',
-                'Upgrade-Insecure-Requests': '1',
-                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.81 Safari/537.36'
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+        'Accept-Encoding': 'gzip, deflate',
+        'Accept-Language': 'zh-CN,zh;q=0.9',
+        'Connection': 'keep-alive',
+        'Cookie': 'JSESSIONID=94E51C4F70D9FE046A835149F51F791E.student54_3; JSESSIONID=606D6B98529B3F848386AF42295EDFDC.student54_3',
+        'DNT': '1',
+        'Host': 'xsgl.7i5q.cas.scut.edu.cn',
+        'Referer': 'http://xsgl.7i5q.cas.scut.edu.cn/sms2/',
+        'Upgrade-Insecure-Requests': '1',
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.81 Safari/537.36}'
 }
-
-js1 = re.findall('src="(.*?)">',source)[1]
-# print(js1)
+js1 = 'http://xsgl.7i5q.cas.scut.edu.cn/sms2/homepage.jsp'#re.findall('src="(.*?)">',source)[1]
+print(js1)
 js1_html = session.get(js1,headers=header_js1,verify=False).content.decode(encoding = 'utf-8',errors = 'ignore')
 print(js1_html)
 
