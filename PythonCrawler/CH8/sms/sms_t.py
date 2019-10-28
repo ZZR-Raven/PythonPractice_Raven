@@ -27,23 +27,35 @@ session = requests.Session()
 source = session.get(smsurl,headers=header,verify=False).content.decode(encoding = 'gb2312',errors = 'ignore')
 # print(source)
 
-header_js1 = {
+# header_js1 = {
 
-        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
-        'Accept-Encoding': 'gzip, deflate',
-        'Accept-Language': 'zh-CN,zh;q=0.9',
-        'Connection': 'keep-alive',
-        'Cookie': 'JSESSIONID=94E51C4F70D9FE046A835149F51F791E.student54_3; JSESSIONID=606D6B98529B3F848386AF42295EDFDC.student54_3',
-        'DNT': '1',
-        'Host': 'xsgl.7i5q.cas.scut.edu.cn',
-        'Referer': 'http://xsgl.7i5q.cas.scut.edu.cn/sms2/',
-        'Upgrade-Insecure-Requests': '1',
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.81 Safari/537.36}'
-}
-js1 = 'http://xsgl.7i5q.cas.scut.edu.cn/sms2/homepage.jsp'#re.findall('src="(.*?)">',source)[1]
-print(js1)
-js1_html = session.get(js1,headers=header_js1,verify=False).content.decode(encoding = 'utf-8',errors = 'ignore')
-print(js1_html)
+#         'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+#         'Accept-Encoding': 'gzip, deflate',
+#         'Accept-Language': 'zh-CN,zh;q=0.9',
+#         'Connection': 'keep-alive',
+#         'Cookie': 'JSESSIONID=94E51C4F70D9FE046A835149F51F791E.student54_3; JSESSIONID=606D6B98529B3F848386AF42295EDFDC.student54_3',
+#         'DNT': '1',
+#         'Host': 'xsgl.7i5q.cas.scut.edu.cn',
+#         'Referer': 'http://xsgl.7i5q.cas.scut.edu.cn/sms2/',
+#         'Upgrade-Insecure-Requests': '1',
+#         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.81 Safari/537.36}'
+# }
+# js1 = (re.findall('src="(.*?)">',source)[1]) + 'homepage.jsp'
+# print(js1)
+# js1_html = session.get(js1,headers=header_js1,verify=False).content.decode(encoding = 'utf-8',errors = 'ignore')
+# print(js1_html)
+# <head>
+# <title>学生信息管理系统&nbsp;－&nbsp;华南理工大学</title>
+# <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+# </head>
+# <frameset rows="*,20" frameborder="NO" border="0" framespacing="0" id="main">
+#   <!--frame src="top.htm" name="topFrame" scrolling="NO" noresize -->
+#    <frame src="main.jsp" name="mainFrame">
+#    <frame src="bottom.jsp" name="bottomFrame" scrolling="NO" noresize >
+#   </frameset>
+
+
+
 
 
 # encoding = 'gb2312',errors = 'ignore'
