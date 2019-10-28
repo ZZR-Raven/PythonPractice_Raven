@@ -16,22 +16,26 @@ driver = webdriver.Chrome()
 driver.get(smsurl)
 input('手动输入账号密码')
 
-header = {
-            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
-            'Accept-Encoding': 'gzip, deflate',
-            'Accept-Language': 'zh-CN,zh;q=0.9',
-            'Cache-Control': 'max-age=0',
-            'Connection': 'keep-alive',
-            'Cookie': 'clwz_blc_pst_WWW=1863413962.20480',
-            'DNT': '1',
-            'Host': 'www.scut.edu.cn',
-            'Upgrade-Insecure-Requests': '1',
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.81 Safari/537.36'
-        }
+# header = {
+#             'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+#             'Accept-Encoding': 'gzip, deflate',
+#             'Accept-Language': 'zh-CN,zh;q=0.9',
+#             'Cache-Control': 'max-age=0',
+#             'Connection': 'keep-alive',
+#             'Cookie': 'clwz_blc_pst_WWW=1863413962.20480',
+#             'DNT': '1',
+#             'Host': 'www.scut.edu.cn',
+#             'Upgrade-Insecure-Requests': '1',
+#             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.81 Safari/537.36'
+#         }
 
-temp = driver.get('http://xsgl.7i5q.cas.scut.edu.cn/sms2/student/module/evaluation/studentIntellectualDetail.jsp?evaluationId=4461&classYearId=13')
+temp = driver.get('http://xsgl.7i5q.cas.scut.edu.cn/sms2/student/evaluation/intellectualList.jsp')
 temp_source = driver.page_source
-print(temp_source)
+# print(temp_source)
+num_list = []
+num_list = re.findall('evaluationId=(\\d*)&classYearId=13',temp_source,re.S)
+print(num_list)
+
 
 # target_url = 'http://xsgl.7i5q.cas.scut.edu.cn/sms2/student/evaluation/intellectualList.jsp'
 # session = requests.Session()
