@@ -33,11 +33,22 @@ pip install pyOpenSSL
 
 pip install certifi
 
-https://github.com/tesseract-ocr/tesseract/wiki/Downloads
-
 pip install tqdm
 
 pip install colorama
 
+pip install pytesseract
+pip install tesseract£¨https://github.com/tesseract-ocr/tesseract/wiki/Downloads£©
+tesseract_cmd = r'C:\Program Files (x86)\Tesseract-OCR\tesseract.exe'
 
+pip install Pillow
 
+pip install numpy
+
+pip install pandas
+
+pip install matplotlib
+
+pip install ipython
+
+pip install scipy
