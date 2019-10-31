@@ -18,6 +18,8 @@ gkurl = 'https://www.guokr.com/'
 
 session = requests.Session()
 source = session.get(gkurl,headers=headers,verify=False).content.decode(encoding = 'utf-8',errors = 'ignore')
-print(source)
+# print(source)
+html = open('gk.html','w',encoding='utf-8')
+html.write(source)
 
 
