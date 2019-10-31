@@ -12,20 +12,27 @@ smsurl = 'http://www.scut.edu.cn/sms/'
 
 header = {
             'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
-            'Accept-Encoding': 'gzip, deflate',
+            'Accept-Encoding': 'gzip, deflate, br',
             'Accept-Language': 'zh-CN,zh;q=0.9',
             'Cache-Control': 'max-age=0',
             'Connection': 'keep-alive',
-            'Cookie': 'clwz_blc_pst_WWW=1863413962.20480',
+            'Content-Length': '366',
+            'Content-Type': 'application/x-www-form-urlencoded',
             'DNT': '1',
-            'Host': 'www.scut.edu.cn',
+            'Host': 'sso.scut.edu.cn',
+            'Origin': 'https://sso.scut.edu.cn',
+            'Referer': 'https://sso.scut.edu.cn/cas/login?service=http%3A%2F%2Fxsgl.7i5q.cas.scut.edu.cn%3A80%2Fsms2%2Fhomepage.jsp',
             'Upgrade-Insecure-Requests': '1',
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.81 Safari/537.36'
-        }
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.81 Safari/537.36'        
+}
 
+cookie = {
+    'Cookie': 'JSESSIONID=5071377F128C1FF655E859FC5A2F000F; Language=zh_CN; clwz_blc_pst_SSO=79767242.38943',
+}
 session = requests.Session()
-source = session.get(smsurl,headers=header,verify=False).content.decode(encoding = 'gb2312',errors = 'ignore')
-# print(source)
+source = session.get(smsurl,headers=header,cookies=cookie,verify=False).content.decode(encoding = 'gb2312',errors = 'ignore')
+
+print(source)
 
 'http://xsgl.7i5q.cas.scut.edu.cn/sms2/student/evaluation/intellectualList.jsp'
 
