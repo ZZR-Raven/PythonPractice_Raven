@@ -41,7 +41,7 @@ print(num_list)
 # print(code)
 
 real_url = []
-with open('zhiyu_info.html',encoding='utf-8') as aaa:
+with open('zhiyu.html',encoding='utf-8') as aaa:
     # print(scorelist)
     hhh = aaa.read()
     url_list = re.findall('<td><a href="(.*?)" target=',str(hhh))
@@ -56,5 +56,3 @@ with open('zhiyu_info.html',encoding='utf-8') as aaa:
             finallist.append(scorelist[i]) 
         i = i + 1
     print(finallist)
-    with open('list.xlsx')as x:
-        x.writelines(finallist)
