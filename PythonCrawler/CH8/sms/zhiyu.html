@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
 
@@ -25,10 +27,12 @@
 function setAction(action) {
 	document.getElementById("beanAction").value = action;
 }
+
 function doAction(formId, actionName) {
 	document.getElementById("beanAction").value = actionName;
 	document.getElementById(formId).submit();
 }
+
 function onPageChanged(){
 	var btobj = document.getElementById("beanAction");
 	btobj.value = "";
@@ -39,6 +43,7 @@ function onSortChanged(){
 	btobj.value = "";
 	setAction("sortChange");
 }
+
 </script>
 </head>
 <body>
@@ -53,7 +58,7 @@ function onSortChanged(){
 
 <table width="100%" border="0" cellpadding="0" cellspacing="0">
   <tr><td>
-
+  	  
 
 
 
@@ -71,25 +76,25 @@ function onSortChanged(){
 	    <tr> 
 	      <td nowrap="nowrap">
 			<select name="classYearId">
-
+			
 	          <option value="9" >2010-2011学年</option>
-
+	        
 	          <option value="8" >2011-2012学年</option>
-
+	        
 	          <option value="7" >2012-2013学年</option>
-
+	        
 	          <option value="5" >2013-2014学年</option>
-
+	        
 	          <option value="6" >2014-2015学年</option>
-
+	        
 	          <option value="2" >2015-2016学年</option>
-
+	        
 	          <option value="10" >2016-2017学年</option>
-
+	        
 	          <option value="11" >2017-2018学年</option>
-
+	        
 	          <option value="13" selected="selected">2018-2019学年</option>
-
+	        
 	        </select>
 	        <input name="search" type="submit" class="button1" value="查询">
 	      </td>
@@ -100,13 +105,14 @@ function onSortChanged(){
   <tr><td>
 	  <table width="100%" class="tittle1">
 	    <tr>
-	      <td nowrap="nowrap">班级学生智育测评列表【17机械类创新班】</td>
-	      <td align="right" nowrap="nowrap">共26条记录</td>
+	      <td nowrap="nowrap">班级学生智育测评列表【17机械工程1班】</td>
+	      <td align="right" nowrap="nowrap">共43条记录</td>
 	    </tr>
 	  </table> 
 	  <table width="100%" border="0" cellpadding="0" cellspacing="1" class="List">
 	    <tr>
 		  <th>序号</th>
+		  
 
 
 
@@ -127,20 +133,19 @@ function onSortChanged(){
 
 
 
-
-
+	
 
 <script type="text/javascript">
-// <!--
+
 function SS_Sort(column, ascending) {
 	document.getElementById("sort.sortColumn").value = column;
 	document.getElementById("sort.ascending").value = ascending;
 	
 	document.getElementById('pageForm').submit();
 }
-//-->
-</script>
 
+</script>
+	
 
 
 
@@ -151,20 +156,20 @@ function SS_Sort(column, ascending) {
 
 
 
-
+	
 	<input type="hidden" id="sort.sortColumn" name="sort.sortColumn" value="studentId"/>
 
 
 
-
+	
 	<input type="hidden" id="sort.ascending" name="sort.ascending" value="true"/>
 
 
 
-
-
+	
+	
 		<a href="#" onclick="SS_Sort('s.XH', true)" title="结果按学号升序排序">学号</a><span style="font-size: 12px"></span>
-
+	
 </th>
 
 
@@ -172,10 +177,10 @@ function SS_Sort(column, ascending) {
 	<th>
 
 
-
-
+	
+	
 		<a href="#" onclick="SS_Sort('u.XM', true)" title="结果按姓名升序排序">姓名</a><span style="font-size: 12px"></span>
-
+	
 </th>
 
 
@@ -183,10 +188,10 @@ function SS_Sort(column, ascending) {
 	<th>
 
 
-
-
+	
+	
 		<a href="#" onclick="SS_Sort('e.intellectualBasePoint', true)" title="结果按基本分升序排序">基本分</a><span style="font-size: 12px"></span>
-
+	
 </th>
 
 
@@ -194,10 +199,10 @@ function SS_Sort(column, ascending) {
 	<th>
 
 
-
-
+	
+	
 		<a href="#" onclick="SS_Sort('e.intellectualExtraPoint', true)" title="结果按加分升序排序">加分</a><span style="font-size: 12px"></span>
-
+	
 </th>
 
 
@@ -205,10 +210,10 @@ function SS_Sort(column, ascending) {
 	<th>
 
 
-
-
+	
+	
 		<a href="#" onclick="SS_Sort('e.intellectualDeductePoint', true)" title="结果按扣分升序排序">扣分</a><span style="font-size: 12px"></span>
-
+	
 </th>
 
 
@@ -216,1143 +221,1874 @@ function SS_Sort(column, ascending) {
 	<th>
 
 
-
-
+	
+	
 		<a href="#" onclick="SS_Sort('e.intellectualTotalPoint', true)" title="结果按总分升序排序">总分</a><span style="font-size: 12px"></span>
-
+	
 </th>
 
 		  <th>审核状态</th>
 	    </tr>
-
-
+	  
+	  
 	    <tr>
 		  <td>1</td>
 	      <td><a href="javascript:void(0);"
 						onmouseover="Tip(
 						    '学生类型：普通高校本科学生<br>'
-							+ '学号：201730080304<br>'
-							+ '姓名：陈浩洋<br>'
+							+ '学号：201730062348<br>'
+							+ '姓名：陈惠达<br>'
 							+ '性别：男<br>'
 							+ '校区：北校区<br>'
 							+ '学院：机械与汽车工程学院<br>'
-							+ '专业：机械类（创新班）<br>'
+							+ '专业：机械工程<br>'
 							+ '年级：2017级<br>'
-							+ '班级：17机械类创新班',
+							+ '班级：17机械工程1班',
 						 	TITLE, '学生信息', DELAY, 1000);"
 						onmouseout="UnTip();">
-			  201730080304</a>
+			  201730062348</a>
 		  </td>
 	      <td><a href="javascript:void(0);"
 						onmouseover="Tip(
 						    '学生类型：普通高校本科学生<br>'
-							+ '学号：201730080304<br>'
-							+ '姓名：陈浩洋<br>'
+							+ '学号：201730062348<br>'
+							+ '姓名：陈惠达<br>'
 							+ '性别：男<br>'
 							+ '校区：北校区<br>'
 							+ '学院：机械与汽车工程学院<br>'
-							+ '专业：机械类（创新班）<br>'
+							+ '专业：机械工程<br>'
 							+ '年级：2017级<br>'
-							+ '班级：17机械类创新班',
+							+ '班级：17机械工程1班',
 						 	TITLE, '学生信息', DELAY, 1000);"
 						onmouseout="UnTip();">
-			  陈浩洋</a>
+			  陈惠达</a>
 		  </td>
-	      <td>90.82</td>
-	      <td>2.0</td>
+	      <td>61.38</td>
 	      <td>0.0</td>
-	      <td><a href="/sms2/student/module/evaluation/studentIntellectualDetail.jsp?evaluationId=10573&classYearId=13" target="_blank">92.82（排名：4|15.4%）</a></td>
+	      <td>0.0</td>
+	      <td><a href="/sms2/student/module/evaluation/studentIntellectualDetail.jsp?evaluationId=4461&classYearId=13" target="_blank">61.38（排名：28|65.1%）</a></td>
 	      <td>
-
-
+		    
+		    
 		    学院通过
 		  </td>
 	    </tr>
-
+	  
 	    <tr>
 		  <td>2</td>
 	      <td><a href="javascript:void(0);"
 						onmouseover="Tip(
 						    '学生类型：普通高校本科学生<br>'
-							+ '学号：201730080311<br>'
-							+ '姓名：陈思齐<br>'
+							+ '学号：201730062379<br>'
+							+ '姓名：成佳<br>'
 							+ '性别：男<br>'
 							+ '校区：北校区<br>'
 							+ '学院：机械与汽车工程学院<br>'
-							+ '专业：机械类（创新班）<br>'
+							+ '专业：机械工程<br>'
 							+ '年级：2017级<br>'
-							+ '班级：17机械类创新班',
+							+ '班级：17机械工程1班',
 						 	TITLE, '学生信息', DELAY, 1000);"
 						onmouseout="UnTip();">
-			  201730080311</a>
+			  201730062379</a>
 		  </td>
 	      <td><a href="javascript:void(0);"
 						onmouseover="Tip(
 						    '学生类型：普通高校本科学生<br>'
-							+ '学号：201730080311<br>'
-							+ '姓名：陈思齐<br>'
+							+ '学号：201730062379<br>'
+							+ '姓名：成佳<br>'
 							+ '性别：男<br>'
 							+ '校区：北校区<br>'
 							+ '学院：机械与汽车工程学院<br>'
-							+ '专业：机械类（创新班）<br>'
+							+ '专业：机械工程<br>'
 							+ '年级：2017级<br>'
-							+ '班级：17机械类创新班',
+							+ '班级：17机械工程1班',
 						 	TITLE, '学生信息', DELAY, 1000);"
 						onmouseout="UnTip();">
-			  陈思齐</a>
+			  成佳</a>
 		  </td>
-	      <td>90.84</td>
+	      <td>72.12</td>
+	      <td>0.5</td>
 	      <td>0.0</td>
-	      <td>0.0</td>
-	      <td><a href="/sms2/student/module/evaluation/studentIntellectualDetail.jsp?evaluationId=10575&classYearId=13" target="_blank">90.84（排名：9|34.6%）</a></td>
+	      <td><a href="/sms2/student/module/evaluation/studentIntellectualDetail.jsp?evaluationId=2911&classYearId=13" target="_blank">72.62（排名：7|16.3%）</a></td>
 	      <td>
-
-
+		    
+		    
 		    学院通过
 		  </td>
 	    </tr>
-
+	  
 	    <tr>
 		  <td>3</td>
 	      <td><a href="javascript:void(0);"
 						onmouseover="Tip(
 						    '学生类型：普通高校本科学生<br>'
-							+ '学号：201730080328<br>'
-							+ '姓名：陈卫国<br>'
+							+ '学号：201730062393<br>'
+							+ '姓名：单文俊<br>'
 							+ '性别：男<br>'
 							+ '校区：北校区<br>'
 							+ '学院：机械与汽车工程学院<br>'
-							+ '专业：机械类（创新班）<br>'
+							+ '专业：机械工程<br>'
 							+ '年级：2017级<br>'
-							+ '班级：17机械类创新班',
+							+ '班级：17机械工程1班',
 						 	TITLE, '学生信息', DELAY, 1000);"
 						onmouseout="UnTip();">
-			  201730080328</a>
+			  201730062393</a>
 		  </td>
 	      <td><a href="javascript:void(0);"
 						onmouseover="Tip(
 						    '学生类型：普通高校本科学生<br>'
-							+ '学号：201730080328<br>'
-							+ '姓名：陈卫国<br>'
+							+ '学号：201730062393<br>'
+							+ '姓名：单文俊<br>'
 							+ '性别：男<br>'
 							+ '校区：北校区<br>'
 							+ '学院：机械与汽车工程学院<br>'
-							+ '专业：机械类（创新班）<br>'
+							+ '专业：机械工程<br>'
 							+ '年级：2017级<br>'
-							+ '班级：17机械类创新班',
+							+ '班级：17机械工程1班',
 						 	TITLE, '学生信息', DELAY, 1000);"
 						onmouseout="UnTip();">
-			  陈卫国</a>
+			  单文俊</a>
 		  </td>
-	      <td>95.9</td>
+	      <td>65.72</td>
 	      <td>0.0</td>
 	      <td>0.0</td>
-	      <td><a href="/sms2/student/module/evaluation/studentIntellectualDetail.jsp?evaluationId=4653&classYearId=13" target="_blank">95.9（排名：3|11.5%）</a></td>
+	      <td><a href="/sms2/student/module/evaluation/studentIntellectualDetail.jsp?evaluationId=10233&classYearId=13" target="_blank">65.72（排名：18|41.9%）</a></td>
 	      <td>
-
-
+		    
+		    
 		    学院通过
 		  </td>
 	    </tr>
-
+	  
 	    <tr>
 		  <td>4</td>
 	      <td><a href="javascript:void(0);"
 						onmouseover="Tip(
 						    '学生类型：普通高校本科学生<br>'
-							+ '学号：201730080335<br>'
-							+ '姓名：戴维<br>'
-							+ '性别：男<br>'
+							+ '学号：201730062485<br>'
+							+ '姓名：郭游<br>'
+							+ '性别：女<br>'
 							+ '校区：北校区<br>'
 							+ '学院：机械与汽车工程学院<br>'
-							+ '专业：机械类（创新班）<br>'
+							+ '专业：机械工程<br>'
 							+ '年级：2017级<br>'
-							+ '班级：17机械类创新班',
+							+ '班级：17机械工程1班',
 						 	TITLE, '学生信息', DELAY, 1000);"
 						onmouseout="UnTip();">
-			  201730080335</a>
+			  201730062485</a>
 		  </td>
 	      <td><a href="javascript:void(0);"
 						onmouseover="Tip(
 						    '学生类型：普通高校本科学生<br>'
-							+ '学号：201730080335<br>'
-							+ '姓名：戴维<br>'
-							+ '性别：男<br>'
+							+ '学号：201730062485<br>'
+							+ '姓名：郭游<br>'
+							+ '性别：女<br>'
 							+ '校区：北校区<br>'
 							+ '学院：机械与汽车工程学院<br>'
-							+ '专业：机械类（创新班）<br>'
+							+ '专业：机械工程<br>'
 							+ '年级：2017级<br>'
-							+ '班级：17机械类创新班',
+							+ '班级：17机械工程1班',
 						 	TITLE, '学生信息', DELAY, 1000);"
 						onmouseout="UnTip();">
-			  戴维</a>
+			  郭游</a>
 		  </td>
-	      <td>92.64</td>
-	      <td>5.0</td>
+	      <td>67.96</td>
+	      <td>0.5</td>
 	      <td>0.0</td>
-	      <td><a href="/sms2/student/module/evaluation/studentIntellectualDetail.jsp?evaluationId=877&classYearId=13" target="_blank">97.64（排名：2|7.7%）</a></td>
+	      <td><a href="/sms2/student/module/evaluation/studentIntellectualDetail.jsp?evaluationId=10245&classYearId=13" target="_blank">68.46（排名：14|32.6%）</a></td>
 	      <td>
-
-
+		    
+		    
 		    学院通过
 		  </td>
 	    </tr>
-
+	  
 	    <tr>
 		  <td>5</td>
 	      <td><a href="javascript:void(0);"
 						onmouseover="Tip(
 						    '学生类型：普通高校本科学生<br>'
-							+ '学号：201730080342<br>'
-							+ '姓名：翟楚寒<br>'
-							+ '性别：女<br>'
+							+ '学号：201730062492<br>'
+							+ '姓名：郝延龙<br>'
+							+ '性别：男<br>'
 							+ '校区：北校区<br>'
 							+ '学院：机械与汽车工程学院<br>'
-							+ '专业：机械类（创新班）<br>'
+							+ '专业：机械工程<br>'
 							+ '年级：2017级<br>'
-							+ '班级：17机械类创新班',
+							+ '班级：17机械工程1班',
 						 	TITLE, '学生信息', DELAY, 1000);"
 						onmouseout="UnTip();">
-			  201730080342</a>
+			  201730062492</a>
 		  </td>
 	      <td><a href="javascript:void(0);"
 						onmouseover="Tip(
 						    '学生类型：普通高校本科学生<br>'
-							+ '学号：201730080342<br>'
-							+ '姓名：翟楚寒<br>'
-							+ '性别：女<br>'
+							+ '学号：201730062492<br>'
+							+ '姓名：郝延龙<br>'
+							+ '性别：男<br>'
 							+ '校区：北校区<br>'
 							+ '学院：机械与汽车工程学院<br>'
-							+ '专业：机械类（创新班）<br>'
+							+ '专业：机械工程<br>'
 							+ '年级：2017级<br>'
-							+ '班级：17机械类创新班',
+							+ '班级：17机械工程1班',
 						 	TITLE, '学生信息', DELAY, 1000);"
 						onmouseout="UnTip();">
-			  翟楚寒</a>
+			  郝延龙</a>
 		  </td>
-	      <td>80.78</td>
+	      <td>62.1</td>
 	      <td>0.0</td>
 	      <td>0.0</td>
-	      <td><a href="/sms2/student/module/evaluation/studentIntellectualDetail.jsp?evaluationId=10583&classYearId=13" target="_blank">80.78（排名：22|84.6%）</a></td>
+	      <td><a href="/sms2/student/module/evaluation/studentIntellectualDetail.jsp?evaluationId=10246&classYearId=13" target="_blank">62.1（排名：27|62.8%）</a></td>
 	      <td>
-
-
+		    
+		    
 		    学院通过
 		  </td>
 	    </tr>
-
+	  
 	    <tr>
 		  <td>6</td>
 	      <td><a href="javascript:void(0);"
 						onmouseover="Tip(
 						    '学生类型：普通高校本科学生<br>'
-							+ '学号：201730080359<br>'
-							+ '姓名：冯雨佳<br>'
-							+ '性别：女<br>'
+							+ '学号：201730063017<br>'
+							+ '姓名：何瑞贤<br>'
+							+ '性别：男<br>'
 							+ '校区：北校区<br>'
 							+ '学院：机械与汽车工程学院<br>'
-							+ '专业：机械类（创新班）<br>'
+							+ '专业：机械工程<br>'
 							+ '年级：2017级<br>'
-							+ '班级：17机械类创新班',
+							+ '班级：17机械工程1班',
 						 	TITLE, '学生信息', DELAY, 1000);"
 						onmouseout="UnTip();">
-			  201730080359</a>
+			  201730063017</a>
 		  </td>
 	      <td><a href="javascript:void(0);"
 						onmouseover="Tip(
 						    '学生类型：普通高校本科学生<br>'
-							+ '学号：201730080359<br>'
-							+ '姓名：冯雨佳<br>'
-							+ '性别：女<br>'
+							+ '学号：201730063017<br>'
+							+ '姓名：何瑞贤<br>'
+							+ '性别：男<br>'
 							+ '校区：北校区<br>'
 							+ '学院：机械与汽车工程学院<br>'
-							+ '专业：机械类（创新班）<br>'
+							+ '专业：机械工程<br>'
 							+ '年级：2017级<br>'
-							+ '班级：17机械类创新班',
+							+ '班级：17机械工程1班',
 						 	TITLE, '学生信息', DELAY, 1000);"
 						onmouseout="UnTip();">
-			  冯雨佳</a>
+			  何瑞贤</a>
 		  </td>
-	      <td>81.2</td>
+	      <td>63.2</td>
 	      <td>0.0</td>
 	      <td>0.0</td>
-	      <td><a href="/sms2/student/module/evaluation/studentIntellectualDetail.jsp?evaluationId=10584&classYearId=13" target="_blank">81.2（排名：21|80.8%）</a></td>
+	      <td><a href="/sms2/student/module/evaluation/studentIntellectualDetail.jsp?evaluationId=10249&classYearId=13" target="_blank">63.2（排名：24|55.8%）</a></td>
 	      <td>
-
-
+		    
+		    
 		    学院通过
 		  </td>
 	    </tr>
-
+	  
 	    <tr>
 		  <td>7</td>
 	      <td><a href="javascript:void(0);"
 						onmouseover="Tip(
 						    '学生类型：普通高校本科学生<br>'
-							+ '学号：201730080366<br>'
-							+ '姓名：郭佳敏<br>'
-							+ '性别：女<br>'
+							+ '学号：201730063031<br>'
+							+ '姓名：黄博文<br>'
+							+ '性别：男<br>'
 							+ '校区：北校区<br>'
 							+ '学院：机械与汽车工程学院<br>'
-							+ '专业：机械类（创新班）<br>'
+							+ '专业：机械工程<br>'
 							+ '年级：2017级<br>'
-							+ '班级：17机械类创新班',
+							+ '班级：17机械工程1班',
 						 	TITLE, '学生信息', DELAY, 1000);"
 						onmouseout="UnTip();">
-			  201730080366</a>
+			  201730063031</a>
 		  </td>
 	      <td><a href="javascript:void(0);"
 						onmouseover="Tip(
 						    '学生类型：普通高校本科学生<br>'
-							+ '学号：201730080366<br>'
-							+ '姓名：郭佳敏<br>'
-							+ '性别：女<br>'
+							+ '学号：201730063031<br>'
+							+ '姓名：黄博文<br>'
+							+ '性别：男<br>'
 							+ '校区：北校区<br>'
 							+ '学院：机械与汽车工程学院<br>'
-							+ '专业：机械类（创新班）<br>'
+							+ '专业：机械工程<br>'
 							+ '年级：2017级<br>'
-							+ '班级：17机械类创新班',
+							+ '班级：17机械工程1班',
 						 	TITLE, '学生信息', DELAY, 1000);"
 						onmouseout="UnTip();">
-			  郭佳敏</a>
+			  黄博文</a>
 		  </td>
-	      <td>82.16</td>
+	      <td>69.12</td>
 	      <td>0.0</td>
 	      <td>0.0</td>
-	      <td><a href="/sms2/student/module/evaluation/studentIntellectualDetail.jsp?evaluationId=686&classYearId=13" target="_blank">82.16（排名：20|76.9%）</a></td>
+	      <td><a href="/sms2/student/module/evaluation/studentIntellectualDetail.jsp?evaluationId=10254&classYearId=13" target="_blank">69.12（排名：13|30.2%）</a></td>
 	      <td>
-
-
+		    
+		    
 		    学院通过
 		  </td>
 	    </tr>
-
+	  
 	    <tr>
 		  <td>8</td>
 	      <td><a href="javascript:void(0);"
 						onmouseover="Tip(
 						    '学生类型：普通高校本科学生<br>'
-							+ '学号：201730080380<br>'
-							+ '姓名：黄俊斐<br>'
+							+ '学号：201730063055<br>'
+							+ '姓名：黄浩舟<br>'
 							+ '性别：男<br>'
 							+ '校区：北校区<br>'
 							+ '学院：机械与汽车工程学院<br>'
-							+ '专业：机械类（创新班）<br>'
+							+ '专业：机械工程<br>'
 							+ '年级：2017级<br>'
-							+ '班级：17机械类创新班',
+							+ '班级：17机械工程1班',
 						 	TITLE, '学生信息', DELAY, 1000);"
 						onmouseout="UnTip();">
-			  201730080380</a>
+			  201730063055</a>
 		  </td>
 	      <td><a href="javascript:void(0);"
 						onmouseover="Tip(
 						    '学生类型：普通高校本科学生<br>'
-							+ '学号：201730080380<br>'
-							+ '姓名：黄俊斐<br>'
+							+ '学号：201730063055<br>'
+							+ '姓名：黄浩舟<br>'
 							+ '性别：男<br>'
 							+ '校区：北校区<br>'
 							+ '学院：机械与汽车工程学院<br>'
-							+ '专业：机械类（创新班）<br>'
+							+ '专业：机械工程<br>'
 							+ '年级：2017级<br>'
-							+ '班级：17机械类创新班',
+							+ '班级：17机械工程1班',
 						 	TITLE, '学生信息', DELAY, 1000);"
 						onmouseout="UnTip();">
-			  黄俊斐</a>
+			  黄浩舟</a>
 		  </td>
-	      <td>87.24</td>
-	      <td>2.0</td>
+	      <td>60.66</td>
 	      <td>0.0</td>
-	      <td><a href="/sms2/student/module/evaluation/studentIntellectualDetail.jsp?evaluationId=872&classYearId=13" target="_blank">89.24（排名：10|38.5%）</a></td>
+	      <td>0.0</td>
+	      <td><a href="/sms2/student/module/evaluation/studentIntellectualDetail.jsp?evaluationId=10257&classYearId=13" target="_blank">60.66（排名：30|69.8%）</a></td>
 	      <td>
-
-
+		    
+		    
 		    学院通过
 		  </td>
 	    </tr>
-
+	  
 	    <tr>
 		  <td>9</td>
 	      <td><a href="javascript:void(0);"
 						onmouseover="Tip(
 						    '学生类型：普通高校本科学生<br>'
-							+ '学号：201730080397<br>'
-							+ '姓名：江洺锋<br>'
+							+ '学号：201730063123<br>'
+							+ '姓名：蒋安邦<br>'
 							+ '性别：男<br>'
 							+ '校区：北校区<br>'
 							+ '学院：机械与汽车工程学院<br>'
-							+ '专业：机械类（创新班）<br>'
+							+ '专业：机械工程<br>'
 							+ '年级：2017级<br>'
-							+ '班级：17机械类创新班',
+							+ '班级：17机械工程1班',
 						 	TITLE, '学生信息', DELAY, 1000);"
 						onmouseout="UnTip();">
-			  201730080397</a>
+			  201730063123</a>
 		  </td>
 	      <td><a href="javascript:void(0);"
 						onmouseover="Tip(
 						    '学生类型：普通高校本科学生<br>'
-							+ '学号：201730080397<br>'
-							+ '姓名：江洺锋<br>'
+							+ '学号：201730063123<br>'
+							+ '姓名：蒋安邦<br>'
 							+ '性别：男<br>'
 							+ '校区：北校区<br>'
 							+ '学院：机械与汽车工程学院<br>'
-							+ '专业：机械类（创新班）<br>'
+							+ '专业：机械工程<br>'
 							+ '年级：2017级<br>'
-							+ '班级：17机械类创新班',
+							+ '班级：17机械工程1班',
 						 	TITLE, '学生信息', DELAY, 1000);"
 						onmouseout="UnTip();">
-			  江洺锋</a>
+			  蒋安邦</a>
 		  </td>
-	      <td>67.04</td>
+	      <td>63.98</td>
+	      <td>11.5</td>
 	      <td>0.0</td>
-	      <td>0.0</td>
-	      <td><a href="/sms2/student/module/evaluation/studentIntellectualDetail.jsp?evaluationId=10595&classYearId=13" target="_blank">67.04（排名：26|100.0%）</a></td>
+	      <td><a href="/sms2/student/module/evaluation/studentIntellectualDetail.jsp?evaluationId=7490&classYearId=13" target="_blank">75.48（排名：4|9.3%）</a></td>
 	      <td>
-
-
+		    
+		    
 		    学院通过
 		  </td>
 	    </tr>
-
+	  
 	    <tr>
 		  <td>10</td>
 	      <td><a href="javascript:void(0);"
 						onmouseover="Tip(
 						    '学生类型：普通高校本科学生<br>'
-							+ '学号：201730080403<br>'
-							+ '姓名：乐珂<br>'
-							+ '性别：女<br>'
+							+ '学号：201730063246<br>'
+							+ '姓名：梁健锋<br>'
+							+ '性别：男<br>'
 							+ '校区：北校区<br>'
 							+ '学院：机械与汽车工程学院<br>'
-							+ '专业：机械类（创新班）<br>'
+							+ '专业：机械工程<br>'
 							+ '年级：2017级<br>'
-							+ '班级：17机械类创新班',
+							+ '班级：17机械工程1班',
 						 	TITLE, '学生信息', DELAY, 1000);"
 						onmouseout="UnTip();">
-			  201730080403</a>
+			  201730063246</a>
 		  </td>
 	      <td><a href="javascript:void(0);"
 						onmouseover="Tip(
 						    '学生类型：普通高校本科学生<br>'
-							+ '学号：201730080403<br>'
-							+ '姓名：乐珂<br>'
-							+ '性别：女<br>'
+							+ '学号：201730063246<br>'
+							+ '姓名：梁健锋<br>'
+							+ '性别：男<br>'
 							+ '校区：北校区<br>'
 							+ '学院：机械与汽车工程学院<br>'
-							+ '专业：机械类（创新班）<br>'
+							+ '专业：机械工程<br>'
 							+ '年级：2017级<br>'
-							+ '班级：17机械类创新班',
+							+ '班级：17机械工程1班',
 						 	TITLE, '学生信息', DELAY, 1000);"
 						onmouseout="UnTip();">
-			  乐珂</a>
+			  梁健锋</a>
 		  </td>
-	      <td>74.88</td>
+	      <td>57.26</td>
 	      <td>0.0</td>
 	      <td>0.0</td>
-	      <td><a href="/sms2/student/module/evaluation/studentIntellectualDetail.jsp?evaluationId=10598&classYearId=13" target="_blank">74.88（排名：25|96.2%）</a></td>
+	      <td><a href="/sms2/student/module/evaluation/studentIntellectualDetail.jsp?evaluationId=10283&classYearId=13" target="_blank">57.26（排名：34|79.1%）</a></td>
 	      <td>
-
-
+		    
+		    
 		    学院通过
 		  </td>
 	    </tr>
-
+	  
 	    <tr>
 		  <td>11</td>
 	      <td><a href="javascript:void(0);"
 						onmouseover="Tip(
 						    '学生类型：普通高校本科学生<br>'
-							+ '学号：201730080410<br>'
-							+ '姓名：李博涵<br>'
+							+ '学号：201730063253<br>'
+							+ '姓名：梁鹏<br>'
 							+ '性别：男<br>'
 							+ '校区：北校区<br>'
 							+ '学院：机械与汽车工程学院<br>'
-							+ '专业：机械类（创新班）<br>'
+							+ '专业：机械工程<br>'
 							+ '年级：2017级<br>'
-							+ '班级：17机械类创新班',
+							+ '班级：17机械工程1班',
 						 	TITLE, '学生信息', DELAY, 1000);"
 						onmouseout="UnTip();">
-			  201730080410</a>
+			  201730063253</a>
 		  </td>
 	      <td><a href="javascript:void(0);"
 						onmouseover="Tip(
 						    '学生类型：普通高校本科学生<br>'
-							+ '学号：201730080410<br>'
-							+ '姓名：李博涵<br>'
+							+ '学号：201730063253<br>'
+							+ '姓名：梁鹏<br>'
 							+ '性别：男<br>'
 							+ '校区：北校区<br>'
 							+ '学院：机械与汽车工程学院<br>'
-							+ '专业：机械类（创新班）<br>'
+							+ '专业：机械工程<br>'
 							+ '年级：2017级<br>'
-							+ '班级：17机械类创新班',
+							+ '班级：17机械工程1班',
 						 	TITLE, '学生信息', DELAY, 1000);"
 						onmouseout="UnTip();">
-			  李博涵</a>
+			  梁鹏</a>
 		  </td>
-	      <td>83.76</td>
+	      <td>40.3</td>
 	      <td>0.0</td>
 	      <td>0.0</td>
-	      <td><a href="/sms2/student/module/evaluation/studentIntellectualDetail.jsp?evaluationId=10600&classYearId=13" target="_blank">83.76（排名：19|73.1%）</a></td>
+	      <td><a href="/sms2/student/module/evaluation/studentIntellectualDetail.jsp?evaluationId=10285&classYearId=13" target="_blank">40.3（排名：36|83.7%）</a></td>
 	      <td>
-
-
+		    
+		    
 		    学院通过
 		  </td>
 	    </tr>
-
+	  
 	    <tr>
 		  <td>12</td>
 	      <td><a href="javascript:void(0);"
 						onmouseover="Tip(
 						    '学生类型：普通高校本科学生<br>'
-							+ '学号：201730080427<br>'
-							+ '姓名：李卓航<br>'
+							+ '学号：201730063338<br>'
+							+ '姓名：刘鑫<br>'
 							+ '性别：男<br>'
 							+ '校区：北校区<br>'
 							+ '学院：机械与汽车工程学院<br>'
-							+ '专业：机械类（创新班）<br>'
+							+ '专业：机械工程<br>'
 							+ '年级：2017级<br>'
-							+ '班级：17机械类创新班',
+							+ '班级：17机械工程1班',
 						 	TITLE, '学生信息', DELAY, 1000);"
 						onmouseout="UnTip();">
-			  201730080427</a>
+			  201730063338</a>
 		  </td>
 	      <td><a href="javascript:void(0);"
 						onmouseover="Tip(
 						    '学生类型：普通高校本科学生<br>'
-							+ '学号：201730080427<br>'
-							+ '姓名：李卓航<br>'
+							+ '学号：201730063338<br>'
+							+ '姓名：刘鑫<br>'
 							+ '性别：男<br>'
 							+ '校区：北校区<br>'
 							+ '学院：机械与汽车工程学院<br>'
-							+ '专业：机械类（创新班）<br>'
+							+ '专业：机械工程<br>'
 							+ '年级：2017级<br>'
-							+ '班级：17机械类创新班',
+							+ '班级：17机械工程1班',
 						 	TITLE, '学生信息', DELAY, 1000);"
 						onmouseout="UnTip();">
-			  李卓航</a>
+			  刘鑫</a>
 		  </td>
-	      <td>80.12</td>
+	      <td>74.7</td>
 	      <td>0.0</td>
 	      <td>0.0</td>
-	      <td><a href="/sms2/student/module/evaluation/studentIntellectualDetail.jsp?evaluationId=10606&classYearId=13" target="_blank">80.12（排名：23|88.5%）</a></td>
+	      <td><a href="/sms2/student/module/evaluation/studentIntellectualDetail.jsp?evaluationId=10298&classYearId=13" target="_blank">74.7（排名：6|14.0%）</a></td>
 	      <td>
-
-
+		    
+		    
 		    学院通过
 		  </td>
 	    </tr>
-
+	  
 	    <tr>
 		  <td>13</td>
 	      <td><a href="javascript:void(0);"
 						onmouseover="Tip(
 						    '学生类型：普通高校本科学生<br>'
-							+ '学号：201730080441<br>'
-							+ '姓名：刘杰鹏<br>'
+							+ '学号：201730063345<br>'
+							+ '姓名：龙德志<br>'
 							+ '性别：男<br>'
 							+ '校区：北校区<br>'
 							+ '学院：机械与汽车工程学院<br>'
-							+ '专业：机械类（创新班）<br>'
+							+ '专业：机械工程<br>'
 							+ '年级：2017级<br>'
-							+ '班级：17机械类创新班',
+							+ '班级：17机械工程1班',
 						 	TITLE, '学生信息', DELAY, 1000);"
 						onmouseout="UnTip();">
-			  201730080441</a>
+			  201730063345</a>
 		  </td>
 	      <td><a href="javascript:void(0);"
 						onmouseover="Tip(
 						    '学生类型：普通高校本科学生<br>'
-							+ '学号：201730080441<br>'
-							+ '姓名：刘杰鹏<br>'
+							+ '学号：201730063345<br>'
+							+ '姓名：龙德志<br>'
 							+ '性别：男<br>'
 							+ '校区：北校区<br>'
 							+ '学院：机械与汽车工程学院<br>'
-							+ '专业：机械类（创新班）<br>'
+							+ '专业：机械工程<br>'
 							+ '年级：2017级<br>'
-							+ '班级：17机械类创新班',
+							+ '班级：17机械工程1班',
 						 	TITLE, '学生信息', DELAY, 1000);"
 						onmouseout="UnTip();">
-			  刘杰鹏</a>
+			  龙德志</a>
 		  </td>
-	      <td>93.88</td>
-	      <td>5.0</td>
+	      <td>22.72</td>
 	      <td>0.0</td>
-	      <td><a href="/sms2/student/module/evaluation/studentIntellectualDetail.jsp?evaluationId=843&classYearId=13" target="_blank">98.88（排名：1|3.8%）</a></td>
+	      <td>0.0</td>
+	      <td><a href="/sms2/student/module/evaluation/studentIntellectualDetail.jsp?evaluationId=10300&classYearId=13" target="_blank">22.72（排名：43|100.0%）</a></td>
 	      <td>
-
-
+		    
+		    
 		    学院通过
 		  </td>
 	    </tr>
-
+	  
 	    <tr>
 		  <td>14</td>
 	      <td><a href="javascript:void(0);"
 						onmouseover="Tip(
 						    '学生类型：普通高校本科学生<br>'
-							+ '学号：201730080458<br>'
-							+ '姓名：刘子彬<br>'
+							+ '学号：201730063352<br>'
+							+ '姓名：卢致敬<br>'
 							+ '性别：男<br>'
 							+ '校区：北校区<br>'
 							+ '学院：机械与汽车工程学院<br>'
-							+ '专业：机械类（创新班）<br>'
+							+ '专业：机械工程<br>'
 							+ '年级：2017级<br>'
-							+ '班级：17机械类创新班',
+							+ '班级：17机械工程1班',
 						 	TITLE, '学生信息', DELAY, 1000);"
 						onmouseout="UnTip();">
-			  201730080458</a>
+			  201730063352</a>
 		  </td>
 	      <td><a href="javascript:void(0);"
 						onmouseover="Tip(
 						    '学生类型：普通高校本科学生<br>'
-							+ '学号：201730080458<br>'
-							+ '姓名：刘子彬<br>'
+							+ '学号：201730063352<br>'
+							+ '姓名：卢致敬<br>'
 							+ '性别：男<br>'
 							+ '校区：北校区<br>'
 							+ '学院：机械与汽车工程学院<br>'
-							+ '专业：机械类（创新班）<br>'
+							+ '专业：机械工程<br>'
 							+ '年级：2017级<br>'
-							+ '班级：17机械类创新班',
+							+ '班级：17机械工程1班',
 						 	TITLE, '学生信息', DELAY, 1000);"
 						onmouseout="UnTip();">
-			  刘子彬</a>
+			  卢致敬</a>
 		  </td>
-	      <td>83.8</td>
-	      <td>4.5</td>
+	      <td>65.22</td>
 	      <td>0.0</td>
-	      <td><a href="/sms2/student/module/evaluation/studentIntellectualDetail.jsp?evaluationId=1959&classYearId=13" target="_blank">88.3（排名：12|46.2%）</a></td>
+	      <td>0.0</td>
+	      <td><a href="/sms2/student/module/evaluation/studentIntellectualDetail.jsp?evaluationId=10303&classYearId=13" target="_blank">65.22（排名：19|44.2%）</a></td>
 	      <td>
-
-
+		    
+		    
 		    学院通过
 		  </td>
 	    </tr>
-
+	  
 	    <tr>
 		  <td>15</td>
 	      <td><a href="javascript:void(0);"
 						onmouseover="Tip(
 						    '学生类型：普通高校本科学生<br>'
-							+ '学号：201730080465<br>'
-							+ '姓名：欧宁<br>'
+							+ '学号：201730063369<br>'
+							+ '姓名：鲁兴琦<br>'
 							+ '性别：男<br>'
 							+ '校区：北校区<br>'
 							+ '学院：机械与汽车工程学院<br>'
-							+ '专业：机械类（创新班）<br>'
+							+ '专业：机械工程<br>'
 							+ '年级：2017级<br>'
-							+ '班级：17机械类创新班',
+							+ '班级：17机械工程1班',
 						 	TITLE, '学生信息', DELAY, 1000);"
 						onmouseout="UnTip();">
-			  201730080465</a>
+			  201730063369</a>
 		  </td>
 	      <td><a href="javascript:void(0);"
 						onmouseover="Tip(
 						    '学生类型：普通高校本科学生<br>'
-							+ '学号：201730080465<br>'
-							+ '姓名：欧宁<br>'
+							+ '学号：201730063369<br>'
+							+ '姓名：鲁兴琦<br>'
 							+ '性别：男<br>'
 							+ '校区：北校区<br>'
 							+ '学院：机械与汽车工程学院<br>'
-							+ '专业：机械类（创新班）<br>'
+							+ '专业：机械工程<br>'
 							+ '年级：2017级<br>'
-							+ '班级：17机械类创新班',
+							+ '班级：17机械工程1班',
 						 	TITLE, '学生信息', DELAY, 1000);"
 						onmouseout="UnTip();">
-			  欧宁</a>
+			  鲁兴琦</a>
 		  </td>
-	      <td>75.14</td>
+	      <td>63.36</td>
 	      <td>0.0</td>
 	      <td>0.0</td>
-	      <td><a href="/sms2/student/module/evaluation/studentIntellectualDetail.jsp?evaluationId=10621&classYearId=13" target="_blank">75.14（排名：24|92.3%）</a></td>
+	      <td><a href="/sms2/student/module/evaluation/studentIntellectualDetail.jsp?evaluationId=10305&classYearId=13" target="_blank">63.36（排名：22|51.2%）</a></td>
 	      <td>
-
-
+		    
+		    
 		    学院通过
 		  </td>
 	    </tr>
-
+	  
 	    <tr>
 		  <td>16</td>
 	      <td><a href="javascript:void(0);"
 						onmouseover="Tip(
 						    '学生类型：普通高校本科学生<br>'
-							+ '学号：201730080472<br>'
-							+ '姓名：齐伟杰<br>'
+							+ '学号：201730063376<br>'
+							+ '姓名：罗浩德<br>'
 							+ '性别：男<br>'
 							+ '校区：北校区<br>'
 							+ '学院：机械与汽车工程学院<br>'
-							+ '专业：机械类（创新班）<br>'
+							+ '专业：机械工程<br>'
 							+ '年级：2017级<br>'
-							+ '班级：17机械类创新班',
+							+ '班级：17机械工程1班',
 						 	TITLE, '学生信息', DELAY, 1000);"
 						onmouseout="UnTip();">
-			  201730080472</a>
+			  201730063376</a>
 		  </td>
 	      <td><a href="javascript:void(0);"
 						onmouseover="Tip(
 						    '学生类型：普通高校本科学生<br>'
-							+ '学号：201730080472<br>'
-							+ '姓名：齐伟杰<br>'
+							+ '学号：201730063376<br>'
+							+ '姓名：罗浩德<br>'
 							+ '性别：男<br>'
 							+ '校区：北校区<br>'
 							+ '学院：机械与汽车工程学院<br>'
-							+ '专业：机械类（创新班）<br>'
+							+ '专业：机械工程<br>'
 							+ '年级：2017级<br>'
-							+ '班级：17机械类创新班',
+							+ '班级：17机械工程1班',
 						 	TITLE, '学生信息', DELAY, 1000);"
 						onmouseout="UnTip();">
-			  齐伟杰</a>
+			  罗浩德</a>
 		  </td>
-	      <td>84.74</td>
+	      <td>66.64</td>
 	      <td>0.0</td>
 	      <td>0.0</td>
-	      <td><a href="/sms2/student/module/evaluation/studentIntellectualDetail.jsp?evaluationId=10626&classYearId=13" target="_blank">84.74（排名：17|65.4%）</a></td>
+	      <td><a href="/sms2/student/module/evaluation/studentIntellectualDetail.jsp?evaluationId=10307&classYearId=13" target="_blank">66.64（排名：16|37.2%）</a></td>
 	      <td>
-
-
+		    
+		    
 		    学院通过
 		  </td>
 	    </tr>
-
+	  
 	    <tr>
 		  <td>17</td>
 	      <td><a href="javascript:void(0);"
 						onmouseover="Tip(
 						    '学生类型：普通高校本科学生<br>'
-							+ '学号：201730080496<br>'
-							+ '姓名：吴广能<br>'
+							+ '学号：201730063505<br>'
+							+ '姓名：苏以鉴<br>'
 							+ '性别：男<br>'
 							+ '校区：北校区<br>'
 							+ '学院：机械与汽车工程学院<br>'
-							+ '专业：机械类（创新班）<br>'
+							+ '专业：机械工程<br>'
 							+ '年级：2017级<br>'
-							+ '班级：17机械类创新班',
+							+ '班级：17机械工程1班',
 						 	TITLE, '学生信息', DELAY, 1000);"
 						onmouseout="UnTip();">
-			  201730080496</a>
+			  201730063505</a>
 		  </td>
 	      <td><a href="javascript:void(0);"
 						onmouseover="Tip(
 						    '学生类型：普通高校本科学生<br>'
-							+ '学号：201730080496<br>'
-							+ '姓名：吴广能<br>'
+							+ '学号：201730063505<br>'
+							+ '姓名：苏以鉴<br>'
 							+ '性别：男<br>'
 							+ '校区：北校区<br>'
 							+ '学院：机械与汽车工程学院<br>'
-							+ '专业：机械类（创新班）<br>'
+							+ '专业：机械工程<br>'
 							+ '年级：2017级<br>'
-							+ '班级：17机械类创新班',
+							+ '班级：17机械工程1班',
 						 	TITLE, '学生信息', DELAY, 1000);"
 						onmouseout="UnTip();">
-			  吴广能</a>
+			  苏以鉴</a>
 		  </td>
-	      <td>85.48</td>
-	      <td>0.5</td>
+	      <td>68.52</td>
+	      <td>10.0</td>
 	      <td>0.0</td>
-	      <td><a href="/sms2/student/module/evaluation/studentIntellectualDetail.jsp?evaluationId=3571&classYearId=13" target="_blank">85.98（排名：16|61.5%）</a></td>
+	      <td><a href="/sms2/student/module/evaluation/studentIntellectualDetail.jsp?evaluationId=10334&classYearId=13" target="_blank">78.52（排名：2|4.7%）</a></td>
 	      <td>
-
-
+		    
+		    
 		    学院通过
 		  </td>
 	    </tr>
-
+	  
 	    <tr>
 		  <td>18</td>
 	      <td><a href="javascript:void(0);"
 						onmouseover="Tip(
 						    '学生类型：普通高校本科学生<br>'
-							+ '学号：201730080502<br>'
-							+ '姓名：吴小华<br>'
+							+ '学号：201730064014<br>'
+							+ '姓名：唐锦荣<br>'
 							+ '性别：男<br>'
 							+ '校区：北校区<br>'
 							+ '学院：机械与汽车工程学院<br>'
-							+ '专业：机械类（创新班）<br>'
+							+ '专业：机械工程<br>'
 							+ '年级：2017级<br>'
-							+ '班级：17机械类创新班',
+							+ '班级：17机械工程1班',
 						 	TITLE, '学生信息', DELAY, 1000);"
 						onmouseout="UnTip();">
-			  201730080502</a>
+			  201730064014</a>
 		  </td>
 	      <td><a href="javascript:void(0);"
 						onmouseover="Tip(
 						    '学生类型：普通高校本科学生<br>'
-							+ '学号：201730080502<br>'
-							+ '姓名：吴小华<br>'
+							+ '学号：201730064014<br>'
+							+ '姓名：唐锦荣<br>'
 							+ '性别：男<br>'
 							+ '校区：北校区<br>'
 							+ '学院：机械与汽车工程学院<br>'
-							+ '专业：机械类（创新班）<br>'
+							+ '专业：机械工程<br>'
 							+ '年级：2017级<br>'
-							+ '班级：17机械类创新班',
+							+ '班级：17机械工程1班',
 						 	TITLE, '学生信息', DELAY, 1000);"
 						onmouseout="UnTip();">
-			  吴小华</a>
+			  唐锦荣</a>
 		  </td>
-	      <td>90.98</td>
+	      <td>67.66</td>
 	      <td>0.0</td>
 	      <td>0.0</td>
-	      <td><a href="/sms2/student/module/evaluation/studentIntellectualDetail.jsp?evaluationId=10635&classYearId=13" target="_blank">90.98（排名：8|30.8%）</a></td>
+	      <td><a href="/sms2/student/module/evaluation/studentIntellectualDetail.jsp?evaluationId=10337&classYearId=13" target="_blank">67.66（排名：15|34.9%）</a></td>
 	      <td>
-
-
+		    
+		    
 		    学院通过
 		  </td>
 	    </tr>
-
+	  
 	    <tr>
 		  <td>19</td>
 	      <td><a href="javascript:void(0);"
 						onmouseover="Tip(
 						    '学生类型：普通高校本科学生<br>'
-							+ '学号：201730081011<br>'
-							+ '姓名：徐力<br>'
+							+ '学号：201730064045<br>'
+							+ '姓名：陶亮亮<br>'
 							+ '性别：男<br>'
 							+ '校区：北校区<br>'
 							+ '学院：机械与汽车工程学院<br>'
-							+ '专业：机械类（创新班）<br>'
+							+ '专业：机械工程<br>'
 							+ '年级：2017级<br>'
-							+ '班级：17机械类创新班',
+							+ '班级：17机械工程1班',
 						 	TITLE, '学生信息', DELAY, 1000);"
 						onmouseout="UnTip();">
-			  201730081011</a>
+			  201730064045</a>
 		  </td>
 	      <td><a href="javascript:void(0);"
 						onmouseover="Tip(
 						    '学生类型：普通高校本科学生<br>'
-							+ '学号：201730081011<br>'
-							+ '姓名：徐力<br>'
+							+ '学号：201730064045<br>'
+							+ '姓名：陶亮亮<br>'
 							+ '性别：男<br>'
 							+ '校区：北校区<br>'
 							+ '学院：机械与汽车工程学院<br>'
-							+ '专业：机械类（创新班）<br>'
+							+ '专业：机械工程<br>'
 							+ '年级：2017级<br>'
-							+ '班级：17机械类创新班',
+							+ '班级：17机械工程1班',
 						 	TITLE, '学生信息', DELAY, 1000);"
 						onmouseout="UnTip();">
-			  徐力</a>
+			  陶亮亮</a>
 		  </td>
-	      <td>86.06</td>
+	      <td>57.92</td>
 	      <td>0.0</td>
 	      <td>0.0</td>
-	      <td><a href="/sms2/student/module/evaluation/studentIntellectualDetail.jsp?evaluationId=10638&classYearId=13" target="_blank">86.06（排名：15|57.7%）</a></td>
+	      <td><a href="/sms2/student/module/evaluation/studentIntellectualDetail.jsp?evaluationId=10343&classYearId=13" target="_blank">57.92（排名：32|74.4%）</a></td>
 	      <td>
-
-
+		    
+		    
 		    学院通过
 		  </td>
 	    </tr>
-
+	  
 	    <tr>
 		  <td>20</td>
 	      <td><a href="javascript:void(0);"
 						onmouseover="Tip(
 						    '学生类型：普通高校本科学生<br>'
-							+ '学号：201730081028<br>'
-							+ '姓名：严仲伟<br>'
+							+ '学号：201730064052<br>'
+							+ '姓名：田棋文<br>'
 							+ '性别：男<br>'
 							+ '校区：北校区<br>'
 							+ '学院：机械与汽车工程学院<br>'
-							+ '专业：机械类（创新班）<br>'
+							+ '专业：机械工程<br>'
 							+ '年级：2017级<br>'
-							+ '班级：17机械类创新班',
+							+ '班级：17机械工程1班',
 						 	TITLE, '学生信息', DELAY, 1000);"
 						onmouseout="UnTip();">
-			  201730081028</a>
+			  201730064052</a>
 		  </td>
 	      <td><a href="javascript:void(0);"
 						onmouseover="Tip(
 						    '学生类型：普通高校本科学生<br>'
-							+ '学号：201730081028<br>'
-							+ '姓名：严仲伟<br>'
+							+ '学号：201730064052<br>'
+							+ '姓名：田棋文<br>'
 							+ '性别：男<br>'
 							+ '校区：北校区<br>'
 							+ '学院：机械与汽车工程学院<br>'
-							+ '专业：机械类（创新班）<br>'
+							+ '专业：机械工程<br>'
 							+ '年级：2017级<br>'
-							+ '班级：17机械类创新班',
+							+ '班级：17机械工程1班',
 						 	TITLE, '学生信息', DELAY, 1000);"
 						onmouseout="UnTip();">
-			  严仲伟</a>
+			  田棋文</a>
 		  </td>
-	      <td>86.82</td>
-	      <td>1.5</td>
+	      <td>47.68</td>
 	      <td>0.0</td>
-	      <td><a href="/sms2/student/module/evaluation/studentIntellectualDetail.jsp?evaluationId=5468&classYearId=13" target="_blank">88.32（排名：11|42.3%）</a></td>
+	      <td>0.0</td>
+	      <td><a href="/sms2/student/module/evaluation/studentIntellectualDetail.jsp?evaluationId=10348&classYearId=13" target="_blank">47.68（排名：35|81.4%）</a></td>
 	      <td>
-
-
+		    
+		    
 		    学院通过
 		  </td>
 	    </tr>
-
+	  
 	    <tr>
 		  <td>21</td>
 	      <td><a href="javascript:void(0);"
 						onmouseover="Tip(
 						    '学生类型：普通高校本科学生<br>'
-							+ '学号：201730081035<br>'
-							+ '姓名：叶添华<br>'
+							+ '学号：201730064120<br>'
+							+ '姓名：韦文斐<br>'
 							+ '性别：男<br>'
 							+ '校区：北校区<br>'
 							+ '学院：机械与汽车工程学院<br>'
-							+ '专业：机械类（创新班）<br>'
+							+ '专业：机械工程<br>'
 							+ '年级：2017级<br>'
-							+ '班级：17机械类创新班',
+							+ '班级：17机械工程1班',
 						 	TITLE, '学生信息', DELAY, 1000);"
 						onmouseout="UnTip();">
-			  201730081035</a>
+			  201730064120</a>
 		  </td>
 	      <td><a href="javascript:void(0);"
 						onmouseover="Tip(
 						    '学生类型：普通高校本科学生<br>'
-							+ '学号：201730081035<br>'
-							+ '姓名：叶添华<br>'
+							+ '学号：201730064120<br>'
+							+ '姓名：韦文斐<br>'
 							+ '性别：男<br>'
 							+ '校区：北校区<br>'
 							+ '学院：机械与汽车工程学院<br>'
-							+ '专业：机械类（创新班）<br>'
+							+ '专业：机械工程<br>'
 							+ '年级：2017级<br>'
-							+ '班级：17机械类创新班',
+							+ '班级：17机械工程1班',
 						 	TITLE, '学生信息', DELAY, 1000);"
 						onmouseout="UnTip();">
-			  叶添华</a>
+			  韦文斐</a>
 		  </td>
-	      <td>90.72</td>
-	      <td>0.5</td>
+	      <td>63.72</td>
 	      <td>0.0</td>
-	      <td><a href="/sms2/student/module/evaluation/studentIntellectualDetail.jsp?evaluationId=3271&classYearId=13" target="_blank">91.22（排名：7|26.9%）</a></td>
+	      <td>0.0</td>
+	      <td><a href="/sms2/student/module/evaluation/studentIntellectualDetail.jsp?evaluationId=10362&classYearId=13" target="_blank">63.72（排名：21|48.8%）</a></td>
 	      <td>
-
-
+		    
+		    
 		    学院通过
 		  </td>
 	    </tr>
-
+	  
 	    <tr>
 		  <td>22</td>
 	      <td><a href="javascript:void(0);"
 						onmouseover="Tip(
 						    '学生类型：普通高校本科学生<br>'
-							+ '学号：201730081042<br>'
-							+ '姓名：张辉坤<br>'
+							+ '学号：201730064144<br>'
+							+ '姓名：吴木伦<br>'
 							+ '性别：男<br>'
 							+ '校区：北校区<br>'
 							+ '学院：机械与汽车工程学院<br>'
-							+ '专业：机械类（创新班）<br>'
+							+ '专业：机械工程<br>'
 							+ '年级：2017级<br>'
-							+ '班级：17机械类创新班',
+							+ '班级：17机械工程1班',
 						 	TITLE, '学生信息', DELAY, 1000);"
 						onmouseout="UnTip();">
-			  201730081042</a>
+			  201730064144</a>
 		  </td>
 	      <td><a href="javascript:void(0);"
 						onmouseover="Tip(
 						    '学生类型：普通高校本科学生<br>'
-							+ '学号：201730081042<br>'
-							+ '姓名：张辉坤<br>'
+							+ '学号：201730064144<br>'
+							+ '姓名：吴木伦<br>'
 							+ '性别：男<br>'
 							+ '校区：北校区<br>'
 							+ '学院：机械与汽车工程学院<br>'
-							+ '专业：机械类（创新班）<br>'
+							+ '专业：机械工程<br>'
 							+ '年级：2017级<br>'
-							+ '班级：17机械类创新班',
+							+ '班级：17机械工程1班',
 						 	TITLE, '学生信息', DELAY, 1000);"
 						onmouseout="UnTip();">
-			  张辉坤</a>
+			  吴木伦</a>
 		  </td>
-	      <td>92.28</td>
+	      <td>57.82</td>
 	      <td>0.0</td>
 	      <td>0.0</td>
-	      <td><a href="/sms2/student/module/evaluation/studentIntellectualDetail.jsp?evaluationId=10648&classYearId=13" target="_blank">92.28（排名：5|19.2%）</a></td>
+	      <td><a href="/sms2/student/module/evaluation/studentIntellectualDetail.jsp?evaluationId=10369&classYearId=13" target="_blank">57.82（排名：33|76.7%）</a></td>
 	      <td>
-
-
+		    
+		    
 		    学院通过
 		  </td>
 	    </tr>
-
+	  
 	    <tr>
 		  <td>23</td>
 	      <td><a href="javascript:void(0);"
 						onmouseover="Tip(
 						    '学生类型：普通高校本科学生<br>'
-							+ '学号：201730081059<br>'
-							+ '姓名：张世帆<br>'
+							+ '学号：201730064168<br>'
+							+ '姓名：向念<br>'
 							+ '性别：男<br>'
 							+ '校区：北校区<br>'
 							+ '学院：机械与汽车工程学院<br>'
-							+ '专业：机械类（创新班）<br>'
+							+ '专业：机械工程<br>'
 							+ '年级：2017级<br>'
-							+ '班级：17机械类创新班',
+							+ '班级：17机械工程1班',
 						 	TITLE, '学生信息', DELAY, 1000);"
 						onmouseout="UnTip();">
-			  201730081059</a>
+			  201730064168</a>
 		  </td>
 	      <td><a href="javascript:void(0);"
 						onmouseover="Tip(
 						    '学生类型：普通高校本科学生<br>'
-							+ '学号：201730081059<br>'
-							+ '姓名：张世帆<br>'
+							+ '学号：201730064168<br>'
+							+ '姓名：向念<br>'
 							+ '性别：男<br>'
 							+ '校区：北校区<br>'
 							+ '学院：机械与汽车工程学院<br>'
-							+ '专业：机械类（创新班）<br>'
+							+ '专业：机械工程<br>'
 							+ '年级：2017级<br>'
-							+ '班级：17机械类创新班',
+							+ '班级：17机械工程1班',
 						 	TITLE, '学生信息', DELAY, 1000);"
 						onmouseout="UnTip();">
-			  张世帆</a>
+			  向念</a>
 		  </td>
-	      <td>78.96</td>
-	      <td>8.5</td>
+	      <td>70.82</td>
+	      <td>5.0</td>
 	      <td>0.0</td>
-	      <td><a href="/sms2/student/module/evaluation/studentIntellectualDetail.jsp?evaluationId=3349&classYearId=13" target="_blank">87.46（排名：13|50.0%）</a></td>
+	      <td><a href="/sms2/student/module/evaluation/studentIntellectualDetail.jsp?evaluationId=949&classYearId=13" target="_blank">75.82（排名：3|7.0%）</a></td>
 	      <td>
-
-
+		    
+		    
 		    学院通过
 		  </td>
 	    </tr>
-
+	  
 	    <tr>
 		  <td>24</td>
 	      <td><a href="javascript:void(0);"
 						onmouseover="Tip(
 						    '学生类型：普通高校本科学生<br>'
-							+ '学号：201730081066<br>'
-							+ '姓名：张镇华<br>'
+							+ '学号：201730064175<br>'
+							+ '姓名：肖扬<br>'
 							+ '性别：男<br>'
 							+ '校区：北校区<br>'
 							+ '学院：机械与汽车工程学院<br>'
-							+ '专业：机械类（创新班）<br>'
+							+ '专业：机械工程<br>'
 							+ '年级：2017级<br>'
-							+ '班级：17机械类创新班',
+							+ '班级：17机械工程1班',
 						 	TITLE, '学生信息', DELAY, 1000);"
 						onmouseout="UnTip();">
-			  201730081066</a>
+			  201730064175</a>
 		  </td>
 	      <td><a href="javascript:void(0);"
 						onmouseover="Tip(
 						    '学生类型：普通高校本科学生<br>'
-							+ '学号：201730081066<br>'
-							+ '姓名：张镇华<br>'
+							+ '学号：201730064175<br>'
+							+ '姓名：肖扬<br>'
 							+ '性别：男<br>'
 							+ '校区：北校区<br>'
 							+ '学院：机械与汽车工程学院<br>'
-							+ '专业：机械类（创新班）<br>'
+							+ '专业：机械工程<br>'
 							+ '年级：2017级<br>'
-							+ '班级：17机械类创新班',
+							+ '班级：17机械工程1班',
 						 	TITLE, '学生信息', DELAY, 1000);"
 						onmouseout="UnTip();">
-			  张镇华</a>
+			  肖扬</a>
 		  </td>
-	      <td>84.66</td>
+	      <td>38.64</td>
 	      <td>0.0</td>
 	      <td>0.0</td>
-	      <td><a href="/sms2/student/module/evaluation/studentIntellectualDetail.jsp?evaluationId=10653&classYearId=13" target="_blank">84.66（排名：18|69.2%）</a></td>
+	      <td><a href="/sms2/student/module/evaluation/studentIntellectualDetail.jsp?evaluationId=10379&classYearId=13" target="_blank">38.64（排名：39|90.7%）</a></td>
 	      <td>
-
-
+		    
+		    
 		    学院通过
 		  </td>
 	    </tr>
-
+	  
 	    <tr>
 		  <td>25</td>
 	      <td><a href="javascript:void(0);"
 						onmouseover="Tip(
 						    '学生类型：普通高校本科学生<br>'
-							+ '学号：201730081073<br>'
-							+ '姓名：赵科炜<br>'
+							+ '学号：201730064205<br>'
+							+ '姓名：徐武宁<br>'
 							+ '性别：男<br>'
 							+ '校区：北校区<br>'
 							+ '学院：机械与汽车工程学院<br>'
-							+ '专业：机械类（创新班）<br>'
+							+ '专业：机械工程<br>'
 							+ '年级：2017级<br>'
-							+ '班级：17机械类创新班',
+							+ '班级：17机械工程1班',
 						 	TITLE, '学生信息', DELAY, 1000);"
 						onmouseout="UnTip();">
-			  201730081073</a>
+			  201730064205</a>
 		  </td>
 	      <td><a href="javascript:void(0);"
 						onmouseover="Tip(
 						    '学生类型：普通高校本科学生<br>'
-							+ '学号：201730081073<br>'
-							+ '姓名：赵科炜<br>'
+							+ '学号：201730064205<br>'
+							+ '姓名：徐武宁<br>'
 							+ '性别：男<br>'
 							+ '校区：北校区<br>'
 							+ '学院：机械与汽车工程学院<br>'
-							+ '专业：机械类（创新班）<br>'
+							+ '专业：机械工程<br>'
 							+ '年级：2017级<br>'
-							+ '班级：17机械类创新班',
+							+ '班级：17机械工程1班',
 						 	TITLE, '学生信息', DELAY, 1000);"
 						onmouseout="UnTip();">
-			  赵科炜</a>
+			  徐武宁</a>
 		  </td>
-	      <td>92.18</td>
+	      <td>61.12</td>
 	      <td>0.0</td>
 	      <td>0.0</td>
-	      <td><a href="/sms2/student/module/evaluation/studentIntellectualDetail.jsp?evaluationId=10657&classYearId=13" target="_blank">92.18（排名：6|23.1%）</a></td>
+	      <td><a href="/sms2/student/module/evaluation/studentIntellectualDetail.jsp?evaluationId=10392&classYearId=13" target="_blank">61.12（排名：29|67.4%）</a></td>
 	      <td>
-
-
+		    
+		    
 		    学院通过
 		  </td>
 	    </tr>
-
+	  
 	    <tr>
 		  <td>26</td>
 	      <td><a href="javascript:void(0);"
 						onmouseover="Tip(
 						    '学生类型：普通高校本科学生<br>'
-							+ '学号：201730081080<br>'
-							+ '姓名：周晓宇<br>'
+							+ '学号：201730064229<br>'
+							+ '姓名：许铭鑫<br>'
 							+ '性别：男<br>'
 							+ '校区：北校区<br>'
 							+ '学院：机械与汽车工程学院<br>'
-							+ '专业：机械类（创新班）<br>'
+							+ '专业：机械工程<br>'
 							+ '年级：2017级<br>'
-							+ '班级：17机械类创新班',
+							+ '班级：17机械工程1班',
 						 	TITLE, '学生信息', DELAY, 1000);"
 						onmouseout="UnTip();">
-			  201730081080</a>
+			  201730064229</a>
 		  </td>
 	      <td><a href="javascript:void(0);"
 						onmouseover="Tip(
 						    '学生类型：普通高校本科学生<br>'
-							+ '学号：201730081080<br>'
-							+ '姓名：周晓宇<br>'
+							+ '学号：201730064229<br>'
+							+ '姓名：许铭鑫<br>'
 							+ '性别：男<br>'
 							+ '校区：北校区<br>'
 							+ '学院：机械与汽车工程学院<br>'
-							+ '专业：机械类（创新班）<br>'
+							+ '专业：机械工程<br>'
 							+ '年级：2017级<br>'
-							+ '班级：17机械类创新班',
+							+ '班级：17机械工程1班',
 						 	TITLE, '学生信息', DELAY, 1000);"
 						onmouseout="UnTip();">
-			  周晓宇</a>
+			  许铭鑫</a>
 		  </td>
-	      <td>87.06</td>
+	      <td>62.6</td>
 	      <td>0.0</td>
 	      <td>0.0</td>
-	      <td><a href="/sms2/student/module/evaluation/studentIntellectualDetail.jsp?evaluationId=10659&classYearId=13" target="_blank">87.06（排名：14|53.8%）</a></td>
+	      <td><a href="/sms2/student/module/evaluation/studentIntellectualDetail.jsp?evaluationId=6552&classYearId=13" target="_blank">62.6（排名：25|58.1%）</a></td>
 	      <td>
-
-
+		    
+		    
 		    学院通过
 		  </td>
 	    </tr>
-
-
-
+	  
+	    <tr>
+		  <td>27</td>
+	      <td><a href="javascript:void(0);"
+						onmouseover="Tip(
+						    '学生类型：普通高校本科学生<br>'
+							+ '学号：201730064236<br>'
+							+ '姓名：杨宇轩<br>'
+							+ '性别：男<br>'
+							+ '校区：北校区<br>'
+							+ '学院：机械与汽车工程学院<br>'
+							+ '专业：机械工程<br>'
+							+ '年级：2017级<br>'
+							+ '班级：17机械工程1班',
+						 	TITLE, '学生信息', DELAY, 1000);"
+						onmouseout="UnTip();">
+			  201730064236</a>
+		  </td>
+	      <td><a href="javascript:void(0);"
+						onmouseover="Tip(
+						    '学生类型：普通高校本科学生<br>'
+							+ '学号：201730064236<br>'
+							+ '姓名：杨宇轩<br>'
+							+ '性别：男<br>'
+							+ '校区：北校区<br>'
+							+ '学院：机械与汽车工程学院<br>'
+							+ '专业：机械工程<br>'
+							+ '年级：2017级<br>'
+							+ '班级：17机械工程1班',
+						 	TITLE, '学生信息', DELAY, 1000);"
+						onmouseout="UnTip();">
+			  杨宇轩</a>
+		  </td>
+	      <td>39.3</td>
+	      <td>0.0</td>
+	      <td>0.0</td>
+	      <td><a href="/sms2/student/module/evaluation/studentIntellectualDetail.jsp?evaluationId=10400&classYearId=13" target="_blank">39.3（排名：38|88.4%）</a></td>
+	      <td>
+		    
+		    
+		    学院通过
+		  </td>
+	    </tr>
+	  
+	    <tr>
+		  <td>28</td>
+	      <td><a href="javascript:void(0);"
+						onmouseover="Tip(
+						    '学生类型：普通高校本科学生<br>'
+							+ '学号：201730064243<br>'
+							+ '姓名：杨泽帆<br>'
+							+ '性别：男<br>'
+							+ '校区：北校区<br>'
+							+ '学院：机械与汽车工程学院<br>'
+							+ '专业：机械工程<br>'
+							+ '年级：2017级<br>'
+							+ '班级：17机械工程1班',
+						 	TITLE, '学生信息', DELAY, 1000);"
+						onmouseout="UnTip();">
+			  201730064243</a>
+		  </td>
+	      <td><a href="javascript:void(0);"
+						onmouseover="Tip(
+						    '学生类型：普通高校本科学生<br>'
+							+ '学号：201730064243<br>'
+							+ '姓名：杨泽帆<br>'
+							+ '性别：男<br>'
+							+ '校区：北校区<br>'
+							+ '学院：机械与汽车工程学院<br>'
+							+ '专业：机械工程<br>'
+							+ '年级：2017级<br>'
+							+ '班级：17机械工程1班',
+						 	TITLE, '学生信息', DELAY, 1000);"
+						onmouseout="UnTip();">
+			  杨泽帆</a>
+		  </td>
+	      <td>27.84</td>
+	      <td>0.0</td>
+	      <td>0.0</td>
+	      <td><a href="/sms2/student/module/evaluation/studentIntellectualDetail.jsp?evaluationId=10407&classYearId=13" target="_blank">27.84（排名：42|97.7%）</a></td>
+	      <td>
+		    
+		    
+		    学院通过
+		  </td>
+	    </tr>
+	  
+	    <tr>
+		  <td>29</td>
+	      <td><a href="javascript:void(0);"
+						onmouseover="Tip(
+						    '学生类型：普通高校本科学生<br>'
+							+ '学号：201730064267<br>'
+							+ '姓名：叶金胜<br>'
+							+ '性别：男<br>'
+							+ '校区：北校区<br>'
+							+ '学院：机械与汽车工程学院<br>'
+							+ '专业：机械工程<br>'
+							+ '年级：2017级<br>'
+							+ '班级：17机械工程1班',
+						 	TITLE, '学生信息', DELAY, 1000);"
+						onmouseout="UnTip();">
+			  201730064267</a>
+		  </td>
+	      <td><a href="javascript:void(0);"
+						onmouseover="Tip(
+						    '学生类型：普通高校本科学生<br>'
+							+ '学号：201730064267<br>'
+							+ '姓名：叶金胜<br>'
+							+ '性别：男<br>'
+							+ '校区：北校区<br>'
+							+ '学院：机械与汽车工程学院<br>'
+							+ '专业：机械工程<br>'
+							+ '年级：2017级<br>'
+							+ '班级：17机械工程1班',
+						 	TITLE, '学生信息', DELAY, 1000);"
+						onmouseout="UnTip();">
+			  叶金胜</a>
+		  </td>
+	      <td>64.66</td>
+	      <td>0.0</td>
+	      <td>0.0</td>
+	      <td><a href="/sms2/student/module/evaluation/studentIntellectualDetail.jsp?evaluationId=4841&classYearId=13" target="_blank">64.66（排名：20|46.5%）</a></td>
+	      <td>
+		    
+		    
+		    学院通过
+		  </td>
+	    </tr>
+	  
+	    <tr>
+		  <td>30</td>
+	      <td><a href="javascript:void(0);"
+						onmouseover="Tip(
+						    '学生类型：普通高校本科学生<br>'
+							+ '学号：201730064328<br>'
+							+ '姓名：曾国豪<br>'
+							+ '性别：男<br>'
+							+ '校区：北校区<br>'
+							+ '学院：机械与汽车工程学院<br>'
+							+ '专业：机械工程<br>'
+							+ '年级：2017级<br>'
+							+ '班级：17机械工程1班',
+						 	TITLE, '学生信息', DELAY, 1000);"
+						onmouseout="UnTip();">
+			  201730064328</a>
+		  </td>
+	      <td><a href="javascript:void(0);"
+						onmouseover="Tip(
+						    '学生类型：普通高校本科学生<br>'
+							+ '学号：201730064328<br>'
+							+ '姓名：曾国豪<br>'
+							+ '性别：男<br>'
+							+ '校区：北校区<br>'
+							+ '学院：机械与汽车工程学院<br>'
+							+ '专业：机械工程<br>'
+							+ '年级：2017级<br>'
+							+ '班级：17机械工程1班',
+						 	TITLE, '学生信息', DELAY, 1000);"
+						onmouseout="UnTip();">
+			  曾国豪</a>
+		  </td>
+	      <td>71.66</td>
+	      <td>0.0</td>
+	      <td>0.0</td>
+	      <td><a href="/sms2/student/module/evaluation/studentIntellectualDetail.jsp?evaluationId=1319&classYearId=13" target="_blank">71.66（排名：9|20.9%）</a></td>
+	      <td>
+		    
+		    
+		    学院通过
+		  </td>
+	    </tr>
+	  
+	    <tr>
+		  <td>31</td>
+	      <td><a href="javascript:void(0);"
+						onmouseover="Tip(
+						    '学生类型：普通高校本科学生<br>'
+							+ '学号：201730064366<br>'
+							+ '姓名：詹润钦<br>'
+							+ '性别：男<br>'
+							+ '校区：北校区<br>'
+							+ '学院：机械与汽车工程学院<br>'
+							+ '专业：机械工程<br>'
+							+ '年级：2017级<br>'
+							+ '班级：17机械工程1班',
+						 	TITLE, '学生信息', DELAY, 1000);"
+						onmouseout="UnTip();">
+			  201730064366</a>
+		  </td>
+	      <td><a href="javascript:void(0);"
+						onmouseover="Tip(
+						    '学生类型：普通高校本科学生<br>'
+							+ '学号：201730064366<br>'
+							+ '姓名：詹润钦<br>'
+							+ '性别：男<br>'
+							+ '校区：北校区<br>'
+							+ '学院：机械与汽车工程学院<br>'
+							+ '专业：机械工程<br>'
+							+ '年级：2017级<br>'
+							+ '班级：17机械工程1班',
+						 	TITLE, '学生信息', DELAY, 1000);"
+						onmouseout="UnTip();">
+			  詹润钦</a>
+		  </td>
+	      <td>71.3</td>
+	      <td>0.5</td>
+	      <td>0.0</td>
+	      <td><a href="/sms2/student/module/evaluation/studentIntellectualDetail.jsp?evaluationId=10431&classYearId=13" target="_blank">71.8（排名：8|18.6%）</a></td>
+	      <td>
+		    
+		    
+		    学院通过
+		  </td>
+	    </tr>
+	  
+	    <tr>
+		  <td>32</td>
+	      <td><a href="javascript:void(0);"
+						onmouseover="Tip(
+						    '学生类型：普通高校本科学生<br>'
+							+ '学号：201730064434<br>'
+							+ '姓名：张强伟<br>'
+							+ '性别：男<br>'
+							+ '校区：北校区<br>'
+							+ '学院：机械与汽车工程学院<br>'
+							+ '专业：机械工程<br>'
+							+ '年级：2017级<br>'
+							+ '班级：17机械工程1班',
+						 	TITLE, '学生信息', DELAY, 1000);"
+						onmouseout="UnTip();">
+			  201730064434</a>
+		  </td>
+	      <td><a href="javascript:void(0);"
+						onmouseover="Tip(
+						    '学生类型：普通高校本科学生<br>'
+							+ '学号：201730064434<br>'
+							+ '姓名：张强伟<br>'
+							+ '性别：男<br>'
+							+ '校区：北校区<br>'
+							+ '学院：机械与汽车工程学院<br>'
+							+ '专业：机械工程<br>'
+							+ '年级：2017级<br>'
+							+ '班级：17机械工程1班',
+						 	TITLE, '学生信息', DELAY, 1000);"
+						onmouseout="UnTip();">
+			  张强伟</a>
+		  </td>
+	      <td>70.88</td>
+	      <td>0.0</td>
+	      <td>0.0</td>
+	      <td><a href="/sms2/student/module/evaluation/studentIntellectualDetail.jsp?evaluationId=3422&classYearId=13" target="_blank">70.88（排名：10|23.3%）</a></td>
+	      <td>
+		    
+		    
+		    学院通过
+		  </td>
+	    </tr>
+	  
+	    <tr>
+		  <td>33</td>
+	      <td><a href="javascript:void(0);"
+						onmouseover="Tip(
+						    '学生类型：普通高校本科学生<br>'
+							+ '学号：201730064458<br>'
+							+ '姓名：张啸<br>'
+							+ '性别：男<br>'
+							+ '校区：北校区<br>'
+							+ '学院：机械与汽车工程学院<br>'
+							+ '专业：机械工程<br>'
+							+ '年级：2017级<br>'
+							+ '班级：17机械工程1班',
+						 	TITLE, '学生信息', DELAY, 1000);"
+						onmouseout="UnTip();">
+			  201730064458</a>
+		  </td>
+	      <td><a href="javascript:void(0);"
+						onmouseover="Tip(
+						    '学生类型：普通高校本科学生<br>'
+							+ '学号：201730064458<br>'
+							+ '姓名：张啸<br>'
+							+ '性别：男<br>'
+							+ '校区：北校区<br>'
+							+ '学院：机械与汽车工程学院<br>'
+							+ '专业：机械工程<br>'
+							+ '年级：2017级<br>'
+							+ '班级：17机械工程1班',
+						 	TITLE, '学生信息', DELAY, 1000);"
+						onmouseout="UnTip();">
+			  张啸</a>
+		  </td>
+	      <td>58.66</td>
+	      <td>0.0</td>
+	      <td>0.0</td>
+	      <td><a href="/sms2/student/module/evaluation/studentIntellectualDetail.jsp?evaluationId=10450&classYearId=13" target="_blank">58.66（排名：31|72.1%）</a></td>
+	      <td>
+		    
+		    
+		    学院通过
+		  </td>
+	    </tr>
+	  
+	    <tr>
+		  <td>34</td>
+	      <td><a href="javascript:void(0);"
+						onmouseover="Tip(
+						    '学生类型：普通高校本科学生<br>'
+							+ '学号：201730064489<br>'
+							+ '姓名：张鑫<br>'
+							+ '性别：男<br>'
+							+ '校区：北校区<br>'
+							+ '学院：机械与汽车工程学院<br>'
+							+ '专业：机械工程<br>'
+							+ '年级：2017级<br>'
+							+ '班级：17机械工程1班',
+						 	TITLE, '学生信息', DELAY, 1000);"
+						onmouseout="UnTip();">
+			  201730064489</a>
+		  </td>
+	      <td><a href="javascript:void(0);"
+						onmouseover="Tip(
+						    '学生类型：普通高校本科学生<br>'
+							+ '学号：201730064489<br>'
+							+ '姓名：张鑫<br>'
+							+ '性别：男<br>'
+							+ '校区：北校区<br>'
+							+ '学院：机械与汽车工程学院<br>'
+							+ '专业：机械工程<br>'
+							+ '年级：2017级<br>'
+							+ '班级：17机械工程1班',
+						 	TITLE, '学生信息', DELAY, 1000);"
+						onmouseout="UnTip();">
+			  张鑫</a>
+		  </td>
+	      <td>74.1</td>
+	      <td>5.0</td>
+	      <td>0.0</td>
+	      <td><a href="/sms2/student/module/evaluation/studentIntellectualDetail.jsp?evaluationId=1024&classYearId=13" target="_blank">79.1（排名：1|2.3%）</a></td>
+	      <td>
+		    
+		    
+		    学院通过
+		  </td>
+	    </tr>
+	  
+	    <tr>
+		  <td>35</td>
+	      <td><a href="javascript:void(0);"
+						onmouseover="Tip(
+						    '学生类型：普通高校本科学生<br>'
+							+ '学号：201730064496<br>'
+							+ '姓名：赵时湛<br>'
+							+ '性别：男<br>'
+							+ '校区：北校区<br>'
+							+ '学院：机械与汽车工程学院<br>'
+							+ '专业：机械工程<br>'
+							+ '年级：2017级<br>'
+							+ '班级：17机械工程1班',
+						 	TITLE, '学生信息', DELAY, 1000);"
+						onmouseout="UnTip();">
+			  201730064496</a>
+		  </td>
+	      <td><a href="javascript:void(0);"
+						onmouseover="Tip(
+						    '学生类型：普通高校本科学生<br>'
+							+ '学号：201730064496<br>'
+							+ '姓名：赵时湛<br>'
+							+ '性别：男<br>'
+							+ '校区：北校区<br>'
+							+ '学院：机械与汽车工程学院<br>'
+							+ '专业：机械工程<br>'
+							+ '年级：2017级<br>'
+							+ '班级：17机械工程1班',
+						 	TITLE, '学生信息', DELAY, 1000);"
+						onmouseout="UnTip();">
+			  赵时湛</a>
+		  </td>
+	      <td>62.38</td>
+	      <td>0.0</td>
+	      <td>0.0</td>
+	      <td><a href="/sms2/student/module/evaluation/studentIntellectualDetail.jsp?evaluationId=6577&classYearId=13" target="_blank">62.38（排名：26|60.5%）</a></td>
+	      <td>
+		    
+		    
+		    学院通过
+		  </td>
+	    </tr>
+	  
+	    <tr>
+		  <td>36</td>
+	      <td><a href="javascript:void(0);"
+						onmouseover="Tip(
+						    '学生类型：普通高校本科学生<br>'
+							+ '学号：201730065042<br>'
+							+ '姓名：钟铠鸿<br>'
+							+ '性别：男<br>'
+							+ '校区：北校区<br>'
+							+ '学院：机械与汽车工程学院<br>'
+							+ '专业：机械工程<br>'
+							+ '年级：2017级<br>'
+							+ '班级：17机械工程1班',
+						 	TITLE, '学生信息', DELAY, 1000);"
+						onmouseout="UnTip();">
+			  201730065042</a>
+		  </td>
+	      <td><a href="javascript:void(0);"
+						onmouseover="Tip(
+						    '学生类型：普通高校本科学生<br>'
+							+ '学号：201730065042<br>'
+							+ '姓名：钟铠鸿<br>'
+							+ '性别：男<br>'
+							+ '校区：北校区<br>'
+							+ '学院：机械与汽车工程学院<br>'
+							+ '专业：机械工程<br>'
+							+ '年级：2017级<br>'
+							+ '班级：17机械工程1班',
+						 	TITLE, '学生信息', DELAY, 1000);"
+						onmouseout="UnTip();">
+			  钟铠鸿</a>
+		  </td>
+	      <td>38.64</td>
+	      <td>0.0</td>
+	      <td>0.0</td>
+	      <td><a href="/sms2/student/module/evaluation/studentIntellectualDetail.jsp?evaluationId=3375&classYearId=13" target="_blank">38.64（排名：39|90.7%）</a></td>
+	      <td>
+		    
+		    
+		    学院通过
+		  </td>
+	    </tr>
+	  
+	    <tr>
+		  <td>37</td>
+	      <td><a href="javascript:void(0);"
+						onmouseover="Tip(
+						    '学生类型：普通高校本科学生<br>'
+							+ '学号：201730065066<br>'
+							+ '姓名：朱国栋<br>'
+							+ '性别：男<br>'
+							+ '校区：北校区<br>'
+							+ '学院：机械与汽车工程学院<br>'
+							+ '专业：机械工程<br>'
+							+ '年级：2017级<br>'
+							+ '班级：17机械工程1班',
+						 	TITLE, '学生信息', DELAY, 1000);"
+						onmouseout="UnTip();">
+			  201730065066</a>
+		  </td>
+	      <td><a href="javascript:void(0);"
+						onmouseover="Tip(
+						    '学生类型：普通高校本科学生<br>'
+							+ '学号：201730065066<br>'
+							+ '姓名：朱国栋<br>'
+							+ '性别：男<br>'
+							+ '校区：北校区<br>'
+							+ '学院：机械与汽车工程学院<br>'
+							+ '专业：机械工程<br>'
+							+ '年级：2017级<br>'
+							+ '班级：17机械工程1班',
+						 	TITLE, '学生信息', DELAY, 1000);"
+						onmouseout="UnTip();">
+			  朱国栋</a>
+		  </td>
+	      <td>64.22</td>
+	      <td>11.25</td>
+	      <td>0.0</td>
+	      <td><a href="/sms2/student/module/evaluation/studentIntellectualDetail.jsp?evaluationId=10475&classYearId=13" target="_blank">75.47（排名：5|11.6%）</a></td>
+	      <td>
+		    
+		    
+		    学院通过
+		  </td>
+	    </tr>
+	  
+	    <tr>
+		  <td>38</td>
+	      <td><a href="javascript:void(0);"
+						onmouseover="Tip(
+						    '学生类型：普通高校本科学生<br>'
+							+ '学号：201730065073<br>'
+							+ '姓名：朱昱钢<br>'
+							+ '性别：男<br>'
+							+ '校区：北校区<br>'
+							+ '学院：机械与汽车工程学院<br>'
+							+ '专业：机械工程<br>'
+							+ '年级：2017级<br>'
+							+ '班级：17机械工程1班',
+						 	TITLE, '学生信息', DELAY, 1000);"
+						onmouseout="UnTip();">
+			  201730065073</a>
+		  </td>
+	      <td><a href="javascript:void(0);"
+						onmouseover="Tip(
+						    '学生类型：普通高校本科学生<br>'
+							+ '学号：201730065073<br>'
+							+ '姓名：朱昱钢<br>'
+							+ '性别：男<br>'
+							+ '校区：北校区<br>'
+							+ '学院：机械与汽车工程学院<br>'
+							+ '专业：机械工程<br>'
+							+ '年级：2017级<br>'
+							+ '班级：17机械工程1班',
+						 	TITLE, '学生信息', DELAY, 1000);"
+						onmouseout="UnTip();">
+			  朱昱钢</a>
+		  </td>
+	      <td>62.8</td>
+	      <td>0.5</td>
+	      <td>0.0</td>
+	      <td><a href="/sms2/student/module/evaluation/studentIntellectualDetail.jsp?evaluationId=10478&classYearId=13" target="_blank">63.3（排名：23|53.5%）</a></td>
+	      <td>
+		    
+		    
+		    学院通过
+		  </td>
+	    </tr>
+	  
+	    <tr>
+		  <td>39</td>
+	      <td><a href="javascript:void(0);"
+						onmouseover="Tip(
+						    '学生类型：<br>'
+							+ '学号：201735063197<br>'
+							+ '姓名：李家宁<br>'
+							+ '性别：男<br>'
+							+ '校区：北校区<br>'
+							+ '学院：机械与汽车工程学院<br>'
+							+ '专业：机械工程<br>'
+							+ '年级：2017级<br>'
+							+ '班级：17机械工程1班',
+						 	TITLE, '学生信息', DELAY, 1000);"
+						onmouseout="UnTip();">
+			  201735063197</a>
+		  </td>
+	      <td><a href="javascript:void(0);"
+						onmouseover="Tip(
+						    '学生类型：<br>'
+							+ '学号：201735063197<br>'
+							+ '姓名：李家宁<br>'
+							+ '性别：男<br>'
+							+ '校区：北校区<br>'
+							+ '学院：机械与汽车工程学院<br>'
+							+ '专业：机械工程<br>'
+							+ '年级：2017级<br>'
+							+ '班级：17机械工程1班',
+						 	TITLE, '学生信息', DELAY, 1000);"
+						onmouseout="UnTip();">
+			  李家宁</a>
+		  </td>
+	      <td>29.72</td>
+	      <td>0.0</td>
+	      <td>0.0</td>
+	      <td><a href="/sms2/student/module/evaluation/studentIntellectualDetail.jsp?evaluationId=10723&classYearId=13" target="_blank">29.72（排名：41|95.3%）</a></td>
+	      <td>
+		    
+		    
+		    学院通过
+		  </td>
+	    </tr>
+	  
+	    <tr>
+		  <td>40</td>
+	      <td><a href="javascript:void(0);"
+						onmouseover="Tip(
+						    '学生类型：本科自主招生<br>'
+							+ '学号：201736063165<br>'
+							+ '姓名：李保航<br>'
+							+ '性别：男<br>'
+							+ '校区：北校区<br>'
+							+ '学院：机械与汽车工程学院<br>'
+							+ '专业：机械工程<br>'
+							+ '年级：2017级<br>'
+							+ '班级：17机械工程1班',
+						 	TITLE, '学生信息', DELAY, 1000);"
+						onmouseout="UnTip();">
+			  201736063165</a>
+		  </td>
+	      <td><a href="javascript:void(0);"
+						onmouseover="Tip(
+						    '学生类型：本科自主招生<br>'
+							+ '学号：201736063165<br>'
+							+ '姓名：李保航<br>'
+							+ '性别：男<br>'
+							+ '校区：北校区<br>'
+							+ '学院：机械与汽车工程学院<br>'
+							+ '专业：机械工程<br>'
+							+ '年级：2017级<br>'
+							+ '班级：17机械工程1班',
+						 	TITLE, '学生信息', DELAY, 1000);"
+						onmouseout="UnTip();">
+			  李保航</a>
+		  </td>
+	      <td>65.8</td>
+	      <td>0.0</td>
+	      <td>0.0</td>
+	      <td><a href="/sms2/student/module/evaluation/studentIntellectualDetail.jsp?evaluationId=6563&classYearId=13" target="_blank">65.8（排名：17|39.5%）</a></td>
+	      <td>
+		    
+		    
+		    学院通过
+		  </td>
+	    </tr>
+	  
+	    <tr>
+		  <td>41</td>
+	      <td><a href="javascript:void(0);"
+						onmouseover="Tip(
+						    '学生类型：本科自主招生<br>'
+							+ '学号：201736065039<br>'
+							+ '姓名：郑镇飚<br>'
+							+ '性别：男<br>'
+							+ '校区：北校区<br>'
+							+ '学院：机械与汽车工程学院<br>'
+							+ '专业：机械工程<br>'
+							+ '年级：2017级<br>'
+							+ '班级：17机械工程1班',
+						 	TITLE, '学生信息', DELAY, 1000);"
+						onmouseout="UnTip();">
+			  201736065039</a>
+		  </td>
+	      <td><a href="javascript:void(0);"
+						onmouseover="Tip(
+						    '学生类型：本科自主招生<br>'
+							+ '学号：201736065039<br>'
+							+ '姓名：郑镇飚<br>'
+							+ '性别：男<br>'
+							+ '校区：北校区<br>'
+							+ '学院：机械与汽车工程学院<br>'
+							+ '专业：机械工程<br>'
+							+ '年级：2017级<br>'
+							+ '班级：17机械工程1班',
+						 	TITLE, '学生信息', DELAY, 1000);"
+						onmouseout="UnTip();">
+			  郑镇飚</a>
+		  </td>
+	      <td>69.68</td>
+	      <td>0.0</td>
+	      <td>0.0</td>
+	      <td><a href="/sms2/student/module/evaluation/studentIntellectualDetail.jsp?evaluationId=4850&classYearId=13" target="_blank">69.68（排名：12|27.9%）</a></td>
+	      <td>
+		    
+		    
+		    学院通过
+		  </td>
+	    </tr>
+	  
+	    <tr>
+		  <td>42</td>
+	      <td><a href="javascript:void(0);"
+						onmouseover="Tip(
+						    '学生类型：综合评价生<br>'
+							+ '学号：201764064356<br>'
+							+ '姓名：曾子蕊<br>'
+							+ '性别：女<br>'
+							+ '校区：北校区<br>'
+							+ '学院：机械与汽车工程学院<br>'
+							+ '专业：机械工程<br>'
+							+ '年级：2017级<br>'
+							+ '班级：17机械工程1班',
+						 	TITLE, '学生信息', DELAY, 1000);"
+						onmouseout="UnTip();">
+			  201764064356</a>
+		  </td>
+	      <td><a href="javascript:void(0);"
+						onmouseover="Tip(
+						    '学生类型：综合评价生<br>'
+							+ '学号：201764064356<br>'
+							+ '姓名：曾子蕊<br>'
+							+ '性别：女<br>'
+							+ '校区：北校区<br>'
+							+ '学院：机械与汽车工程学院<br>'
+							+ '专业：机械工程<br>'
+							+ '年级：2017级<br>'
+							+ '班级：17机械工程1班',
+						 	TITLE, '学生信息', DELAY, 1000);"
+						onmouseout="UnTip();">
+			  曾子蕊</a>
+		  </td>
+	      <td>39.56</td>
+	      <td>0.0</td>
+	      <td>0.0</td>
+	      <td><a href="/sms2/student/module/evaluation/studentIntellectualDetail.jsp?evaluationId=10893&classYearId=13" target="_blank">39.56（排名：37|86.0%）</a></td>
+	      <td>
+		    
+		    
+		    学院通过
+		  </td>
+	    </tr>
+	  
+	    <tr>
+		  <td>43</td>
+	      <td><a href="javascript:void(0);"
+						onmouseover="Tip(
+						    '学生类型：综合评价生<br>'
+							+ '学号：201764065056<br>'
+							+ '姓名：周善为<br>'
+							+ '性别：男<br>'
+							+ '校区：北校区<br>'
+							+ '学院：机械与汽车工程学院<br>'
+							+ '专业：机械工程<br>'
+							+ '年级：2017级<br>'
+							+ '班级：17机械工程1班',
+						 	TITLE, '学生信息', DELAY, 1000);"
+						onmouseout="UnTip();">
+			  201764065056</a>
+		  </td>
+	      <td><a href="javascript:void(0);"
+						onmouseover="Tip(
+						    '学生类型：综合评价生<br>'
+							+ '学号：201764065056<br>'
+							+ '姓名：周善为<br>'
+							+ '性别：男<br>'
+							+ '校区：北校区<br>'
+							+ '学院：机械与汽车工程学院<br>'
+							+ '专业：机械工程<br>'
+							+ '年级：2017级<br>'
+							+ '班级：17机械工程1班',
+						 	TITLE, '学生信息', DELAY, 1000);"
+						onmouseout="UnTip();">
+			  周善为</a>
+		  </td>
+	      <td>69.94</td>
+	      <td>0.0</td>
+	      <td>0.0</td>
+	      <td><a href="/sms2/student/module/evaluation/studentIntellectualDetail.jsp?evaluationId=10900&classYearId=13" target="_blank">69.94（排名：11|25.6%）</a></td>
+	      <td>
+		    
+		    
+		    学院通过
+		  </td>
+	    </tr>
+	  
+	  
+      
 	  </table>
 	  <table width="100%" class="tittle1">
 	    <tr>
 	      <td nowrap="nowrap">
-
+		  
 		  </td>
-	      <td align="right" nowrap="nowrap">共26条记录</td>
+	      <td align="right" nowrap="nowrap">共43条记录</td>
 	    </tr>
 	  </table>
   </td></tr>
@@ -1360,4 +2096,4 @@ function SS_Sort(column, ascending) {
 </form>
 <script type="text/javascript" src="/sms2/js/wz_tooltip/wz_tooltip.js"></script>
 </body>
-</html> 
+</html>
