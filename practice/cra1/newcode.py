@@ -16,25 +16,38 @@ from Raven import tqdmRaven
 
 url = 'https://tieba.baidu.com/p/4975393487?pn=1'
 xp_eg = '//*[@id="j_p_postlist"]/div[1]/div[2]/div[1]/cc/div[2]/text()'
+
 xp_1 = '//*[@id="j_p_postlist"]/div['
 xp_2 = ']/div[2]/div[1]/cc/div[2]/text()'
 xp_3 = ']/div[2]/div[1]/cc/div[2]/a/text()'
 comments_1 = []
 comments_2 = []
-
+rpl_tem = ''
+rpl_com = ''
 ori_code = requests.get(url,re.S).content.decode(encoding = 'UTF-8',errors = 'ignore')
 
-for xp in range(1,26):      # 左闭右开
+for num in range(1,35):      # 左闭右开
     # print(xp)
-    com_xp_1 = xp_1 + str(xp) + xp_2
-    com_xp_2 = xp_1 + str(xp) + xp_3
+    com_xp_1 = xp_1 + str(num) + xp_2
+    com_xp_2 = xp_1 + str(num) + xp_3
     selector = etree.HTML(ori_code)
-    comments_1.append(selector.xpath(com_xp_1))
-    comments_2.append(selector.xpath(com_xp_2))
+    temp_com = selector.xpath(com_xp_1)
+    word = selector.xpath(com_xp_2)
+    if len(word) > 0 :
+        for wnum in range(0,len(word)):
+            rpl_tem = str(temp_com).replace('\', \'',word[wnum],wnum+1)
+            rpl_com = rpl_tem
+            print(rpl_com)
+    rpl_com = rpl_tem
+    com = re.findall('(\d*\.+.*)',str(rpl_com)) 
+    if len(com) > 0 :                # 不为空
+        comments_1.append(com)
+    
+    
 
 
 
-# print(comments_1)
+print(comments_1)
 # print(comments_2)
 
 # [['            本人现在在这里为大家把龙一到龙四的东西疑点都梳理一下，然后并对他们进行推测，预判五的内容和每个人的身份。'], ['
