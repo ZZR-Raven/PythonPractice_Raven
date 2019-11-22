@@ -9,7 +9,7 @@ import scrapy
 import lxml
 from tqdm import tqdm,trange
 import time
-
+import captcha
 
 class driver_crawler(object):
 

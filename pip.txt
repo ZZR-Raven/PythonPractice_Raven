@@ -52,3 +52,5 @@ pip install matplotlib
 pip install ipython
 
 pip install scipy
+
+pip install captcha
