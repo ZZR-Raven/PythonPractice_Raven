@@ -1,4 +1,4 @@
 
 *.ipynb_checkpoints
 .ipynb_checkpoints/*
-/PythonCrawler/amz/amzuser.txt
+PythonCrawler/amz/amzuser.txt
