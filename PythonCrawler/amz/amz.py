@@ -36,6 +36,8 @@ pecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http
 %3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&
  '''
 
+
+
 user_driver = driver_crawler()
 user_driver.driverget(url_lg)  
         
